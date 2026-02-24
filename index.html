@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dominic Koh | AI/ML Engineer & Computer Scientist</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- CSS modules -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/experience.css" />
+  <link rel="stylesheet" href="css/education.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/awards.css" />
+  <link rel="stylesheet" href="css/sports.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/cursor.css" />
+  <link rel="stylesheet" href="css/effects.css" />
+  <link rel="stylesheet" href="css/intro.css" />
+</head>
+<body>
+
+<!-- ========================================================
+     INTRO OVERLAY — cinematic split-screen reveal
+     ======================================================== -->
+<div id="intro-overlay">
+  <div class="i-panel i-top"></div>
+  <div class="i-panel i-bot"></div>
+  <div class="i-center">
+    <div class="i-name">DK<span class="i-dot">.</span></div>
+    <div class="i-bar"></div>
+    <div class="i-sub">PORTFOLIO &middot; 2026</div>
+  </div>
+</div>
+
+<!-- Scroll progress indicator -->
+<div id="scroll-progress"></div>
+
+<!-- ========================================================
+     NAVBAR
+     ======================================================== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">DK<span class="logo-dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#sports">Sports</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ========================================================
+     HERO
+     ======================================================== -->
+<section id="hero">
+  <!-- Aurora background orbs -->
+  <div class="aurora-orb ao1"></div>
+  <div class="aurora-orb ao2"></div>
+  <div class="aurora-orb ao3"></div>
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-text">
+    <div class="hero-badge">
+      <span class="badge-dot"></span> Open to Opportunities
+    </div>
+    <h1 class="hero-name">Dominic <span class="grad-text">Koh</span></h1>
+    <p class="hero-role">AI/ML Engineer &amp; Computer Scientist</p>
+    <p class="hero-typing"><span id="typingText"></span><span class="cursor">|</span></p>
+    <div class="hero-stats">
+      <div class="hstat">
+        <span class="hstat-val">4.83</span>
+        <span class="hstat-lbl">GPA / 5.0</span>
+      </div>
+      <div class="hstat-sep"></div>
+      <div class="hstat">
+        <span class="hstat-val">3×</span>
+        <span class="hstat-lbl">Dean's List</span>
+      </div>
+      <div class="hstat-sep"></div>
+      <div class="hstat">
+        <span class="hstat-val">Nat'l</span>
+        <span class="hstat-lbl">Table Tennis Athlete</span>
+      </div>
+      <div class="hstat-sep"></div>
+      <div class="hstat">
+        <span class="hstat-val">4×</span>
+        <span class="hstat-lbl">Internships</span>
+      </div>
+    </div>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+    <div class="hero-socials">
+      <a href="mailto:domksj23@gmail.com" title="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/dominic-koh-323752281/" target="_blank" title="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/dominopizzaaaa" target="_blank" title="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="tel:+6587175667" title="Phone" class="social-icon"><i class="fas fa-phone"></i></a>
+    </div>
+    </div><!-- /hero-text -->
+    <div class="hero-photos">
+      <div class="hero-photo"><img src="images/Main photo 1.JPG" alt="Dominic Koh" loading="eager" /></div>
+      <div class="hero-photo"><img src="images/Main photo 2.JPG" alt="Dominic Koh" loading="eager" /></div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ========================================================
+     ABOUT
+     ======================================================== -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">01 / About</span>
+      <h2 class="section-title">Who I <span class="grad-text">Am</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Hi, I'm <strong>Dominic</strong> — a Computer Science student at the <strong>National University of Singapore (NUS)</strong>, specialising in <strong>Artificial Intelligence</strong>, <strong>Database Systems</strong>, and <strong>Computer Networks</strong>.</p>
+        <p>As an <strong>NUS Global Merit Scholar</strong> with a 4.83/5 GPA, I've been awarded the Dean's List three times and recognised as Top Student for Computer Network Practices (CS3103). Served as <strong>Captain of NUS Table Tennis</strong>.</p>
+        <p>I was a member of the <strong>Singapore National Table Tennis Team</strong>, representing Singapore at the World University Games, WTT events, and regional championships. I also served as a <strong>Commando Officer</strong> in the Singapore Army — leading 80 personnel as Officer Commanding.</p>
+        <p>I'm passionate about applying AI and machine learning to real-world problems — from surveillance systems to multimodal VLMs that outperform GPT-4.</p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card reveal-left">
+          <div class="acard-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <h4>NUS Global Merit Scholar</h4>
+            <p>Prestigious merit scholarship for outstanding NUS students</p>
+          </div>
+        </div>
+        <div class="about-card reveal-left">
+          <div class="acard-icon"><i class="fas fa-star"></i></div>
+          <div>
+            <h4>3× Dean's List</h4>
+            <p>AY23/24 S1 · AY24/25 S1 · AY24/25 S2</p>
+          </div>
+        </div>
+        <div class="about-card reveal-left">
+          <div class="acard-icon"><i class="fa-solid fa-table-tennis-paddle-ball"></i></div>
+          <div>
+            <h4>National Athlete &amp; NUS Captain</h4>
+            <p>Singapore National TT Team · NUS TT Team Captain AY24/25</p>
+          </div>
+        </div>
+        <div class="about-card reveal-left">
+          <div class="acard-icon"><i class="fas fa-medal"></i></div>
+          <div>
+            <h4>OCS Sword of Merit</h4>
+            <p>Top 10% of Singapore's Officer Cadet School cohort</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     EXPERIENCE
+     ======================================================== -->
+<section id="experience" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">02 / Experience</span>
+      <h2 class="section-title">Work <span class="grad-text">Experience</span></h2>
+    </div>
+    <div class="timeline">
+
+      <!-- DSO -->
+      <div class="tl-item reveal-up">
+        <div class="tl-dot"></div>
+        <div class="tl-card featured-card">
+          <div class="tl-top">
+            <div class="tl-company-info">
+              <div class="tl-logo dso-logo">DSO</div>
+              <div>
+                <h3>AI/ML Engineer Intern <span class="live-badge"><span class="live-dot"></span>LIVE</span></h3>
+                <h4>DSO National Laboratories</h4>
+              </div>
+            </div>
+            <div class="tl-meta">
+              <span><i class="far fa-calendar-alt"></i> Jan 2026 – Jun 2026</span>
+              <span><i class="fas fa-location-dot"></i> Singapore</span>
+            </div>
+          </div>
+          <ul class="tl-bullets">
+            <li>Developed an end-to-end pipeline for automated <strong>SAR (Synthetic Aperture Radar)</strong> data acquisition and Optical–SAR paired dataset construction</li>
+            <li>Enabled deep learning–based cross-modal feature alignment and image matching using <strong>OSMNet</strong></li>
+          </ul>
+          <div class="tag-row">
+            <span>SAR Imaging</span><span>OSMNet</span><span>Deep Learning</span><span>Cross-modal</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NUS Teaching Assistant -->
+      <div class="tl-item reveal-up">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div class="tl-company-info">
+              <div class="tl-logo nus-ta-logo">NUS</div>
+              <div>
+                <h3>Teaching Assistant — CS2103T Software Engineering</h3>
+                <h4>National University of Singapore</h4>
+              </div>
+            </div>
+            <div class="tl-meta">
+              <span><i class="far fa-calendar-alt"></i> Aug 2025 – Dec 2025</span>
+              <span><i class="fas fa-location-dot"></i> Singapore</span>
+            </div>
+          </div>
+          <ul class="tl-bullets">
+            <li>Conducted weekly tutorials and guided students on software engineering principles, OOP design, and the software development lifecycle</li>
+            <li>Reviewed student pull requests, provided code feedback, and assessed project deliverables for a team-based Java project (AB3 fork)</li>
+          </ul>
+          <div class="tag-row">
+            <span>Java</span><span>Software Engineering</span><span>OOP</span><span>Code Review</span><span>Teaching</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HTX -->
+      <div class="tl-item reveal-up">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div class="tl-company-info">
+              <div class="tl-logo htx-logo">HTX</div>
+              <div>
+                <h3>AI/ML Engineer Intern</h3>
+                <h4>Home Team Science &amp; Technology Agency (HTX)</h4>
+              </div>
+            </div>
+            <div class="tl-meta">
+              <span><i class="far fa-calendar-alt"></i> May 2025 – Nov 2025</span>
+              <span><i class="fas fa-location-dot"></i> Singapore</span>
+            </div>
+          </div>
+          <ul class="tl-bullets">
+            <li>Developed a real-time vehicle detection system using <strong>RF-DETR</strong> and <strong>YOLO</strong> variants, achieving over <strong>95% accuracy</strong></li>
+            <li>Built a full-stack pipeline with <strong>FastAPI</strong>, <strong>WebSockets</strong>, and <strong>React</strong> to stream detection results and trigger alerts for tracking</li>
+            <li>Automated dataset creation and annotation with <strong>FFmpeg</strong> and <strong>COCO-Annotator</strong>, enabling rapid model retraining</li>
+            <li>Prototyped LLM integration (OpenAI GPT, Gemini, Qwen) to generate incident summaries and alert messages</li>
+          </ul>
+          <div class="tag-row">
+            <span>RF-DETR</span><span>YOLO</span><span>FastAPI</span><span>React</span><span>WebSockets</span><span>FFmpeg</span><span>LLMs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Xiao Bai Qiu -->
+      <div class="tl-item reveal-up">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div class="tl-company-info">
+              <div class="tl-logo xbq-logo">XBQ</div>
+              <div>
+                <h3>Software Engineer Intern</h3>
+                <h4>Xiao Bai Qiu</h4>
+              </div>
+            </div>
+            <div class="tl-meta">
+              <span><i class="far fa-calendar-alt"></i> Jan 2025 – Apr 2025</span>
+              <span><i class="fas fa-location-dot"></i> Singapore</span>
+            </div>
+          </div>
+          <ul class="tl-bullets">
+            <li>Built a full-stack tournament and player ranking system using <strong>FastAPI</strong> and <strong>Next.js</strong></li>
+            <li>Designed clean, responsive UI with <strong>Tailwind CSS</strong> and modular React components</li>
+          </ul>
+          <div class="tag-row">
+            <span>FastAPI</span><span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>TypeScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certis -->
+      <div class="tl-item reveal-up">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div class="tl-company-info">
+              <div class="tl-logo certis-logo">CTS</div>
+              <div>
+                <h3>AI/ML Engineer Intern</h3>
+                <h4>Certis</h4>
+              </div>
+            </div>
+            <div class="tl-meta">
+              <span><i class="far fa-calendar-alt"></i> May 2024 – Aug 2024</span>
+              <span><i class="fas fa-location-dot"></i> Singapore</span>
+            </div>
+          </div>
+          <ul class="tl-bullets">
+            <li>Developed real-time FOV change detection using <strong>YOLO</strong>, <strong>RTSP</strong>, <strong>SSIM</strong> and <strong>FFmpeg</strong>, achieving <strong>80% accuracy</strong></li>
+            <li>Implemented SSIM-based similarity analysis — 90% similarity for stable cameras; detecting drops below 50% with a 5° shift</li>
+            <li>Implemented <strong>Redis</strong> for real-time data handling; optimised Python backend with FFmpeg for video decoding and frame extraction</li>
+          </ul>
+          <div class="tag-row">
+            <span>YOLO</span><span>SSIM</span><span>Redis</span><span>FFmpeg</span><span>RTSP</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     EDUCATION
+     ======================================================== -->
+<section id="education" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">03 / Education</span>
+      <h2 class="section-title">Academic <span class="grad-text">Journey</span></h2>
+    </div>
+    <div class="edu-grid">
+
+      <!-- NUS -->
+      <div class="edu-card reveal-up">
+        <div class="edu-card-header nus-header">
+          <div class="edu-logo-text">NUS</div>
+          <div class="edu-gpa-badge">4.83<span>/5</span></div>
+        </div>
+        <div class="edu-body">
+          <h3>National University of Singapore</h3>
+          <p class="edu-degree">B.Comp. Computer Science (First Class Honours)</p>
+          <p class="edu-period"><i class="far fa-calendar-alt"></i> Aug 2023 – Dec 2026</p>
+          <p class="edu-spec"><i class="fas fa-microchip"></i> AI · Database Systems · Computer Networks</p>
+
+          <!-- AY23/24 -->
+          <div class="edu-ay-block">
+            <span class="edu-ay-label">AY23/24 (Year 1)</span>
+            <ul class="edu-list">
+              <li><i class="fas fa-list-ol"></i> Dean's List – Sem 1</li>
+              <li><i class="fas fa-trophy gold-i"></i> Sportsman of the Year (Commendation) – NUS Achievement Awards</li>
+              <li><i class="fas fa-users gold-i"></i> Sports Team of the Year (Distinction) – NUS Achievement Awards</li>
+              <li><i class="fa-solid fa-table-tennis-paddle-ball green-i"></i> SUNIG Champion · IVP Champion · IHG Champion</li>
+              <li><i class="fas fa-person-running green-i"></i> IHG Road Relay – 3rd Place</li>
+            </ul>
+          </div>
+
+          <!-- AY24/25 -->
+          <div class="edu-ay-block">
+            <span class="edu-ay-label">AY24/25 (Year 2)</span>
+            <ul class="edu-list">
+              <li><i class="fas fa-list-ol"></i> Dean's List – Sem 1 &amp; Sem 2</li>
+              <li><i class="fas fa-crown gold-i"></i> Captain, NUS Table Tennis Team</li>
+              <li><i class="fas fa-trophy gold-i"></i> Sportsman of the Year (Commendation) – NUS Achievement Awards</li>
+              <li><i class="fas fa-users gold-i"></i> Sports Team of the Year (Merit) – NUS Achievement Awards</li>
+              <li><i class="fa-solid fa-table-tennis-paddle-ball green-i"></i> SUNIG 2nd · IVP Champion · IHG Champion</li>
+              <li><i class="fas fa-person-running green-i"></i> IHG Road Relay – 2nd Place</li>
+            </ul>
+          </div>
+
+          <!-- AY25/26 -->
+          <div class="edu-ay-block">
+            <span class="edu-ay-label">AY25/26 (Year 3)</span>
+            <ul class="edu-list">
+              <li><i class="fas fa-network-wired gold-i"></i> Top Student – CS3103 (Computer Network Practices)</li>
+              <li><i class="fa-solid fa-table-tennis-paddle-ball green-i"></i> SUNIG Champion · IVP Champion · IHG Champion</li>
+              <li><i class="fas fa-person-running green-i"></i> IHG Road Relay – Champion</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Raffles Institution -->
+      <div class="edu-card reveal-up">
+        <div class="edu-card-header ri-header">
+          <div class="edu-logo-text">RI</div>
+          <div class="edu-gpa-badge">90<span>/90 RP</span></div>
+        </div>
+        <div class="edu-body">
+          <h3>Raffles Institution</h3>
+          <p class="edu-degree">Singapore-Cambridge GCE A-Level</p>
+          <p class="edu-period"><i class="far fa-calendar-alt"></i> 2015 – 2020</p>
+          <ul class="edu-list">
+            <li><i class="fas fa-fire"></i> 3× F.I.R.E. Award (2016, 2018, 2019) — exemplary character</li>
+            <li><i class="fas fa-trophy"></i> National School Games Champion (2015–2019)</li>
+            <li><i class="fas fa-globe-asia"></i> Represented SG – ASEAN School Games (2016–2018)</li>
+            <li><i class="fas fa-globe-asia"></i> Represented SG – Asian School Games 2016</li>
+            <li><i class="fas fa-medal"></i> National Colours Award (2015–2019, 5 consecutive years)</li>
+            <li><i class="fas fa-flask"></i> Silver Award &amp; High Distinction – Raffles Research Education</li>
+            <li><i class="fas fa-users"></i> Table Tennis Captain (C Div 2016, B Div 2018)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Maris Stella -->
+      <div class="edu-card reveal-up">
+        <div class="edu-card-header ms-header">
+          <div class="edu-logo-text">MS</div>
+        </div>
+        <div class="edu-body">
+          <h3>Maris Stella High School</h3>
+          <p class="edu-degree">PSLE (Primary School Leaving Examination)</p>
+          <p class="edu-period"><i class="far fa-calendar-alt"></i> 2009 – 2014</p>
+          <ul class="edu-list">
+            <li><i class="fas fa-crown"></i> Vice-Head Prefect (2014) | Prefect (2012–2014)</li>
+            <li><i class="fas fa-users"></i> TT Captain – Junior Boys (2013), Senior Boys (2014)</li>
+            <li><i class="fas fa-trophy"></i> National School Games Champion – Individuals (2014)</li>
+            <li><i class="fas fa-award"></i> Sportsmanship Award (2013–2014)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     PROJECTS
+     ======================================================== -->
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">04 / Projects</span>
+      <h2 class="section-title">Featured <span class="grad-text">Projects</span></h2>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Sentiment Modeling -->
+      <div class="proj-card reveal-up">
+        <div class="proj-icon" style="background: linear-gradient(135deg,#6366f1,#8b5cf6)"><i class="fas fa-brain"></i></div>
+        <div class="proj-body">
+          <div class="proj-top">
+            <h3>Short-Text Sentiment Modeling</h3>
+            <span class="proj-date">Jan 2026 – Present</span>
+          </div>
+          <p class="proj-cat">NLP &amp; Transformers</p>
+          <p>Transformer-based sentiment classification for short-form social media text (27K tweets). Benchmarked TF-IDF + Logistic Regression against fine-tuned <strong>RoBERTa</strong> using macro-F1 evaluation and class-weighted loss for label imbalance.</p>
+          <div class="tag-row"><span>RoBERTa</span><span>PyTorch</span><span>NLP</span><span>TF-IDF</span><span>Transformers</span></div>
+        </div>
+      </div>
+
+      <!-- CAPTCHA -->
+      <div class="proj-card reveal-up">
+        <div class="proj-icon" style="background: linear-gradient(135deg,#0ea5e9,#06b6d4)"><i class="fas fa-shield-halved"></i></div>
+        <div class="proj-body">
+          <div class="proj-top">
+            <h3>CAPTCHA Recognition System</h3>
+            <span class="proj-date">Oct – Nov 2025</span>
+          </div>
+          <p class="proj-cat">Deep Learning &amp; Computer Vision</p>
+          <p>Compared CNN, ResNet-18, VGG and YOLO-based approaches — achieving <strong>90% character-level</strong> and <strong>73% CAPTCHA-level</strong> accuracy. Designed robust augmentation pipelines and explored GAN-based synthetic data generation.</p>
+          <div class="tag-row"><span>CNN</span><span>ResNet-18</span><span>YOLO</span><span>GAN</span><span>PyTorch</span><span>OpenCV</span></div>
+        </div>
+      </div>
+
+      <!-- Trademark OCR -->
+      <div class="proj-card featured reveal-up">
+        <div class="proj-featured-badge">Outperformed GPT-4</div>
+        <div class="proj-icon" style="background: linear-gradient(135deg,#f59e0b,#ef4444)"><i class="fas fa-trademark"></i></div>
+        <div class="proj-body">
+          <div class="proj-top">
+            <h3>Multimodal Trademark OCR Pipeline</h3>
+            <span class="proj-date">Jul 2025</span>
+          </div>
+          <p class="proj-cat">AI &amp; Computer Vision</p>
+          <p>Fine-tuned VLMs (Qwen-VL, InternVL) on <strong>300k samples</strong>, achieving <strong>0.74 exact-match accuracy</strong> and outperforming GPT-4/4o-mini on OCR and logo understanding tasks.</p>
+          <div class="tag-row"><span>Qwen-VL</span><span>InternVL</span><span>VLMs</span><span>OCR</span><span>Fine-tuning</span></div>
+        </div>
+      </div>
+
+      <!-- TAHub -->
+      <div class="proj-card reveal-up">
+        <div class="proj-icon" style="background: linear-gradient(135deg,#10b981,#059669)"><i class="fas fa-laptop-code"></i></div>
+        <div class="proj-body">
+          <div class="proj-top">
+            <h3>TAHub App</h3>
+            <span class="proj-date">Aug – Dec 2024</span>
+          </div>
+          <p class="proj-cat">CS2103T Software Engineering · NUS</p>
+          <p>CLI-optimised Java desktop application for Teaching Assistants with full GUI support. Built with JavaFX and Jackson for the NUS CS2103T Software Engineering module. Implemented JUnit5 testing and CI/CD with Codecov.</p>
+          <div class="tag-row"><span>Java</span><span>JavaFX</span><span>Jackson</span><span>JUnit5</span><span>CI/CD</span></div>
+        </div>
+      </div>
+
+      <!-- HealthGPT -->
+      <div class="proj-card featured reveal-up">
+        <div class="proj-featured-badge">NUS Orbital Apollo 11</div>
+        <div class="proj-icon" style="background: linear-gradient(135deg,#ec4899,#8b5cf6)"><i class="fas fa-heartbeat"></i></div>
+        <div class="proj-body">
+          <div class="proj-top">
+            <h3>HealthGPT Telegram Bot</h3>
+            <span class="proj-date">May – Aug 2024</span>
+          </div>
+          <p class="proj-cat">AI &amp; Software Engineering</p>
+          <p>AI-powered healthcare chatbot using <strong>OpenAI GPT</strong> for context-aware queries. Integrated Google Maps API for hospital discovery within 5 km. Backend with Node.js and Drogon (C++).</p>
+          <div class="proj-link-row">
+            <a href="https://t.me/healthgptforall_bot" target="_blank"><i class="fab fa-telegram"></i> @healthgptforall_bot</a>
+          </div>
+          <div class="tag-row"><span>OpenAI GPT</span><span>Node.js</span><span>C++ Drogon</span><span>SQLite</span><span>Google Maps</span></div>
+        </div>
+      </div>
+
+      <!-- SGPetFinder -->
+      <div class="proj-card reveal-up">
+        <div class="proj-icon" style="background: linear-gradient(135deg,#f97316,#fbbf24)"><i class="fas fa-paw"></i></div>
+        <div class="proj-body">
+          <div class="proj-top">
+            <h3>SGPetFinder</h3>
+            <span class="proj-date">Jun – Dec 2024</span>
+          </div>
+          <p class="proj-cat">Full-Stack E-Commerce</p>
+          <p>Full-stack e-commerce platform for pet shops to list animals and buyers to search with filters, with integrated account creation and authentication.</p>
+          <div class="proj-link-row">
+            <a href="https://main--sgpetfinder.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+          <div class="tag-row"><span>React</span><span>Node.js</span><span>MongoDB</span><span>JavaScript</span></div>
+        </div>
+      </div>
+
+      <!-- PillPod -->
+      <div class="proj-card reveal-up">
+        <div class="proj-icon" style="background: linear-gradient(135deg,#14b8a6,#0891b2)"><i class="fas fa-pills"></i></div>
+        <div class="proj-body">
+          <div class="proj-top">
+            <h3>PillPod — NUS Medical Grand Challenge</h3>
+            <span class="proj-date">Apr – Aug 2024</span>
+          </div>
+          <p class="proj-cat">AI &amp; Healthcare · NUS Challenge</p>
+          <p>Automated medication management system for the elderly using OCR, computer vision, and microcontrollers — built for the NUS Medical Grand Challenge. <strong>Reached finals</strong> and presented to medical &amp; industry experts.</p>
+          <div class="tag-row"><span>OCR</span><span>Computer Vision</span><span>Microcontrollers</span><span>AI</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     SKILLS
+     ======================================================== -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">05 / Skills</span>
+      <h2 class="section-title">Technical <span class="grad-text">Skills</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-cat lang reveal-up">
+        <div class="skill-cat-header"><div class="skill-cat-icon"><i class="fas fa-code"></i></div><h3>Programming Languages</h3></div>
+        <div class="skill-tags">
+          <span class="stag">Python</span><span class="stag">Java</span>
+          <span class="stag">C++</span><span class="stag">C</span>
+          <span class="stag">SQL</span><span class="stag">R</span>
+          <span class="stag">JavaScript</span><span class="stag">TypeScript</span>
+        </div>
+      </div>
+      <div class="skill-cat ai reveal-up">
+        <div class="skill-cat-header"><div class="skill-cat-icon"><i class="fas fa-robot"></i></div><h3>AI / ML</h3></div>
+        <div class="skill-tags">
+          <span class="stag">PyTorch</span><span class="stag">YOLO</span>
+          <span class="stag">OpenCV</span><span class="stag">Transformers</span>
+          <span class="stag">LLMs / VLMs</span><span class="stag">Computer Vision</span>
+          <span class="stag">GAN</span><span class="stag">SSIM</span>
+        </div>
+      </div>
+      <div class="skill-cat web reveal-up">
+        <div class="skill-cat-header"><div class="skill-cat-icon"><i class="fas fa-globe"></i></div><h3>Web &amp; Frameworks</h3></div>
+        <div class="skill-tags">
+          <span class="stag">React</span><span class="stag">Next.js</span>
+          <span class="stag">FastAPI</span><span class="stag">Node.js</span>
+          <span class="stag">WebSocket</span><span class="stag">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="skill-cat db reveal-up">
+        <div class="skill-cat-header"><div class="skill-cat-icon"><i class="fas fa-database"></i></div><h3>Databases</h3></div>
+        <div class="skill-tags">
+          <span class="stag">PostgreSQL</span><span class="stag">MongoDB</span>
+          <span class="stag">Redis</span><span class="stag">SQLite</span>
+        </div>
+      </div>
+      <div class="skill-cat tools reveal-up">
+        <div class="skill-cat-header"><div class="skill-cat-icon"><i class="fas fa-screwdriver-wrench"></i></div><h3>Tools &amp; DevOps</h3></div>
+        <div class="skill-tags">
+          <span class="stag">Git</span><span class="stag">Docker</span>
+          <span class="stag">FFmpeg</span><span class="stag">CI/CD</span>
+          <span class="stag">JUnit5</span><span class="stag">COCO-Annotator</span>
+          <span class="stag">JavaFX</span><span class="stag">Drogon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     AWARDS
+     ======================================================== -->
+<section id="awards" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">06 / Awards</span>
+      <h2 class="section-title">Awards &amp; <span class="grad-text">Achievements</span></h2>
+    </div>
+    <div class="award-tabs">
+      <button class="atab active" data-panel="acad">Academic</button>
+      <button class="atab" data-panel="mil">Military</button>
+      <button class="atab" data-panel="sport-aw">Sports</button>
+      <button class="atab" data-panel="cert">Certifications</button>
+    </div>
+
+    <!-- Academic -->
+    <div class="award-panel active" id="panel-acad">
+      <div class="award-list">
+        <div class="aw-item reveal-up">
+          <div class="aw-icon gold"><i class="fas fa-medal"></i></div>
+          <div class="aw-body">
+            <h4>NUS Global Merit Scholarship</h4>
+            <p class="aw-source">National University of Singapore · 2023</p>
+            <p class="aw-desc">One of Singapore's most competitive university scholarships, awarded to top NUS students demonstrating exceptional academic excellence and all-round achievement. Covers full tuition fees.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon gold"><i class="fas fa-trophy"></i></div>
+          <div class="aw-body">
+            <h4>Top Student – Computer Network Practices (CS3103)</h4>
+            <p class="aw-source">NUS School of Computing · Jan 2026</p>
+            <p class="aw-desc">Recognised as the top-performing student in CS3103, covering routing protocols, network architecture, and practical network configuration.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon dean"><i class="fas fa-star"></i></div>
+          <div class="aw-body">
+            <h4>Dean's List – AY24/25 Sem 2</h4>
+            <p class="aw-source">NUS School of Computing · Jun 2025 · ID: 148561439</p>
+            <p class="aw-desc">Top 5% of students for outstanding academic performance in the semester.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon dean"><i class="fas fa-star"></i></div>
+          <div class="aw-body">
+            <h4>Dean's List – AY24/25 Sem 1</h4>
+            <p class="aw-source">NUS School of Computing · Jan 2025 · ID: 129042721</p>
+            <p class="aw-desc">Top 5% of students for outstanding academic performance.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon dean"><i class="fas fa-star"></i></div>
+          <div class="aw-body">
+            <h4>Dean's List – AY23/24 Sem 1</h4>
+            <p class="aw-source">NUS School of Computing · Jan 2024 · ID: 91318549</p>
+            <p class="aw-desc">Top 5% of students for outstanding academic performance in the inaugural university semester.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon bronze"><i class="fas fa-rocket"></i></div>
+          <div class="aw-body">
+            <h4>NUS Orbital – Apollo 11 (Advanced)</h4>
+            <p class="aw-source">NUS School of Computing · Aug 2024 · ID: 112802405</p>
+            <p class="aw-desc">Second highest achievement level in NUS's self-directed programming summer programme. Built HealthGPT, an AI-powered healthcare Telegram bot.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon bronze"><i class="fas fa-fire-flame-curved"></i></div>
+          <div class="aw-body">
+            <h4>F.I.R.E. Award (3×)</h4>
+            <p class="aw-source">Raffles Institution · 2016, 2018, 2019</p>
+            <p class="aw-desc">Awarded to students who embody exemplary character across <strong>F</strong>ortitude, <strong>I</strong>ntegrity, <strong>R</strong>espect, and <strong>E</strong>nterprise. Awarded in Years 2, 4, and 5.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon bronze"><i class="fas fa-flask"></i></div>
+          <div class="aw-body">
+            <h4>Silver Award &amp; Certificate of High Distinction</h4>
+            <p class="aw-source">Raffles Institution Research Education · 2016</p>
+            <p class="aw-desc">Awarded for an outstanding research project under Raffles' Research Education (RE) programme.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Military -->
+    <div class="award-panel" id="panel-mil">
+      <!-- Army photos -->
+      <div class="mil-photos">
+        <div class="mil-photo gallery-item" data-caption="Army 2021 — 1st Commando Battalion">
+          <img src="images/Army photo 2021 .JPG" alt="Army 2021" loading="lazy" />
+        </div>
+        <div class="mil-photo gallery-item" data-caption="Army 2021">
+          <img src="images/Army photo 2021 2.JPG" alt="Army 2021" loading="lazy" />
+        </div>
+        <div class="mil-photo gallery-item" data-caption="Army 2022 — Officer Commanding">
+          <img src="images/Army 2022 solo pic.JPG" alt="Army OC 2022" loading="lazy" />
+        </div>
+        <div class="mil-photo gallery-item" data-caption="Army 2022">
+          <img src="images/Army 2022 solo pic 2.JPG" alt="Army 2022" loading="lazy" />
+        </div>
+        <div class="mil-photo gallery-item" data-caption="Commando Parachute Jump 2021 — 1st Commando Battalion">
+          <img src="images/parachute commando 1.JPG" alt="Commando parachute jump 2021" loading="lazy" />
+        </div>
+        <div class="mil-photo gallery-item" data-caption="Commando Parachute Jump 2022">
+          <img src="images/parachute commando 2.JPG" alt="Commando parachute jump 2022" loading="lazy" />
+        </div>
+      </div>
+      <div class="award-list">
+        <div class="aw-item reveal-up">
+          <div class="aw-icon gold"><i class="fas fa-star"></i></div>
+          <div class="aw-body">
+            <h4>Sword of Merit (SOM)</h4>
+            <p class="aw-source">Officer Cadet School (OCS) · Dec 2021 · Cohort 123/21 OCC</p>
+            <p class="aw-desc">Awarded to the <strong>top 10%</strong> of each OCS cohort. Recognises exceptional leadership, military proficiency and character throughout the rigorous nine-month officer training programme — one of the most coveted NS awards.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon gold"><i class="fas fa-shield-halved"></i></div>
+          <div class="aw-body">
+            <h4>Officer Commanding — 1st Commando Battalion</h4>
+            <p class="aw-source">Singapore Army · Nov 2021 &amp; Nov 2022 (Reservist)</p>
+            <p class="aw-desc">Appointed as Officer Commanding, leading <strong>80 personnel</strong>. Responsible for mission planning, reservist cycle planning, and presenting operational plans to senior commanders.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon silver"><i class="fas fa-shield-alt"></i></div>
+          <div class="aw-body">
+            <h4>Best Combat Unit – Army Test &amp; Evaluation (ATEC)</h4>
+            <p class="aw-source">Singapore Army · 2021</p>
+            <p class="aw-desc">Unit attained Best Combat Unit at ATEC — the SAF's highest operational readiness assessment, testing combat effectiveness under realistic mission scenarios.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon bronze"><i class="fas fa-running"></i></div>
+          <div class="aw-body">
+            <h4>Best Physical Training (PT) in Company</h4>
+            <p class="aw-source">Singapore Army – BMT · 2019</p>
+            <p class="aw-desc">Highest physical training score in the company during Basic Military Training.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon bronze"><i class="fas fa-scroll"></i></div>
+          <div class="aw-body">
+            <h4>Letter of Appreciation</h4>
+            <p class="aw-source">Singapore Army · 2021</p>
+            <p class="aw-desc">Formal recognition from the Singapore Army for exceptional contributions and outstanding service during national service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sports Awards -->
+    <div class="award-panel" id="panel-sport-aw">
+      <div class="award-list">
+        <div class="aw-item reveal-up">
+          <div class="aw-icon gold"><i class="fas fa-trophy"></i></div>
+          <div class="aw-body">
+            <h4>Sportsman of the Year – Commendation (2×)</h4>
+            <p class="aw-source">NUS Achievement Awards · 2024 &amp; 2025</p>
+            <p class="aw-desc">Awarded twice for outstanding individual sporting performance representing NUS Table Tennis at national and international competitions.</p>
+            <div class="aw-img-row">
+              <img src="images/Sportmen of the Year (Commendation).png" alt="Sportsman of the Year 2024" class="aw-cert-thumb gallery-item" data-caption="NUS Sportsman of the Year (Commendation)" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon gold"><i class="fas fa-users"></i></div>
+          <div class="aw-body">
+            <h4>Sports Team of the Year</h4>
+            <p class="aw-source">NUS Achievement Awards · Distinction 2024, Merit 2025</p>
+            <p class="aw-desc">NUS Table Tennis Team recognised for outstanding collective performance — Distinction in 2024 and Merit in 2025.</p>
+            <div class="aw-img-row">
+              <img src="images/Sports Team of the Year (Distinction).png" alt="Sports Team of the Year" class="aw-cert-thumb gallery-item" data-caption="Sports Team of the Year (Distinction 2024)" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon gold"><i class="fas fa-globe-asia"></i></div>
+          <div class="aw-body">
+            <h4>Meritorious Award – 24th SEA Junior Table Tennis Championships</h4>
+            <p class="aw-source">Singapore National Olympic Council (SNOC) · 2019</p>
+            <p class="aw-desc">Awarded for outstanding results: <strong>Men's Team: Champion</strong> · Men's Doubles: Champion · Mixed Doubles: 2nd · Men's Singles: Top 8</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon silver"><i class="fas fa-medal"></i></div>
+          <div class="aw-body">
+            <h4>WUG Diploma of Honour (2×)</h4>
+            <p class="aw-source">World University Games · 2023 &amp; 2025</p>
+            <p class="aw-desc">Awarded Diploma of Honour at the World University Games — both Chengdu 2023 (Top 16 in Singles, Doubles, and Team) and Germany 2025 (Men's Doubles Top 8, Mixed Doubles &amp; Team Top 16).</p>
+            <div class="aw-img-row">
+              <img src="images/WUG Men's Team.png" alt="WUG Men's Team" class="aw-cert-thumb gallery-item" data-caption="WUG Men's Team" loading="lazy" />
+              <img src="images/WUG Men's Double.png" alt="WUG Men's Doubles" class="aw-cert-thumb gallery-item" data-caption="WUG Men's Doubles" loading="lazy" />
+              <img src="images/WUG Mixed Double.png" alt="WUG Mixed Doubles" class="aw-cert-thumb gallery-item" data-caption="WUG Mixed Doubles" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon silver"><i class="fas fa-medal"></i></div>
+          <div class="aw-body">
+            <h4>National Colours Award (5×)</h4>
+            <p class="aw-source">Singapore Schools Sports Council (SSSC) · 2015–2019</p>
+            <p class="aw-desc">Singapore's highest school sports honour — awarded to student-athletes who represented Singapore internationally and demonstrated exemplary sporting character. Five consecutive years.</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon bronze"><i class="fas fa-award"></i></div>
+          <div class="aw-body">
+            <h4>Sportsmanship Award</h4>
+            <p class="aw-source">Maris Stella High School · 2013, 2014</p>
+            <p class="aw-desc">Recognised for exemplary sportsmanship on and off the table tennis court.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="award-panel" id="panel-cert">
+      <div class="award-list">
+        <div class="aw-item reveal-up">
+          <div class="aw-icon" style="background:rgba(251,191,36,0.15);color:var(--gold)"><i class="fab fa-google"></i></div>
+          <div class="aw-body">
+            <h4>Foundations: Data, Data, Everywhere</h4>
+            <p class="aw-source">Google · May 2025 · ID: 8CZ7TMWR3KVL</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon" style="background:rgba(99,102,241,0.15);color:var(--indigo)"><i class="fab fa-js"></i></div>
+          <div class="aw-body">
+            <h4>JavaScript Algorithms &amp; Data Structures</h4>
+            <p class="aw-source">freeCodeCamp · Jan 2024 · ID: dominopizzaaaa-jaads</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon" style="background:rgba(14,165,233,0.15);color:var(--blue)"><i class="fab fa-html5"></i></div>
+          <div class="aw-body">
+            <h4>Responsive Web Design</h4>
+            <p class="aw-source">freeCodeCamp · Jan 2024 · ID: dominopizzaaaa-rwd</p>
+          </div>
+        </div>
+        <div class="aw-item reveal-up">
+          <div class="aw-icon" style="background:rgba(139,92,246,0.15);color:var(--purple)"><i class="fab fa-microsoft"></i></div>
+          <div class="aw-body">
+            <h4>Foundational C# with Microsoft</h4>
+            <p class="aw-source">freeCodeCamp · Jan 2024 · ID: dominopizzaaaa-fcswm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================================
+     SPORTS
+     ======================================================== -->
+<section id="sports" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">07 / Sports</span>
+      <h2 class="section-title">Sports <span class="grad-text">Career</span></h2>
+      <p class="section-sub">Member of the Singapore National Table Tennis Team since 2016. NUS Table Tennis Captain (AY24/25).</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="sports-stats">
+      <div class="ss-card reveal-up">
+        <span class="ss-val">20+</span>
+        <span class="ss-lbl">International Events</span>
+      </div>
+      <div class="ss-card reveal-up">
+        <span class="ss-val">25+</span>
+        <span class="ss-lbl">Championship Titles</span>
+      </div>
+      <div class="ss-card reveal-up">
+        <span class="ss-val">5×</span>
+        <span class="ss-lbl">National Colours Award</span>
+      </div>
+      <div class="ss-card reveal-up">
+        <span class="ss-val">10+</span>
+        <span class="ss-lbl">Countries Competed In</span>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="sports-timeline">
+
+      <!-- 2026 -->
+      <div class="stl-item reveal-up">
+        <div class="stl-year">2026</div>
+        <div class="stl-card">
+          <h3>National Intermediate Squad</h3>
+          <p class="stl-sub">Singapore National Table Tennis Team</p>
+          <ul>
+            <li><strong>IVP 25/26</strong> – Champion</li>
+            <li>Safra Table Tennis Championship – Men's Team 2nd</li>
+          </ul>
+          <div class="stl-photos">
+            <div class="stl-photo gallery-item" data-caption="IVP Champion AY25/26">
+              <img src="images/IVP 2526 Champion.JPG" alt="IVP 2526 Champion" loading="lazy" />
+            </div>
+            <div class="stl-photo gallery-item" data-caption="IVP Champion AY25/26">
+              <img src="images/IVP 2526 champion solo pic.JPG" alt="IVP 2526 solo" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2025 -->
+      <div class="stl-item reveal-up">
+        <div class="stl-year">2025</div>
+        <div class="stl-card">
+          <h3>National Intermediate Squad</h3>
+          <p class="stl-sub">Singapore National Table Tennis Team</p>
+          <ul>
+            <li><strong>World University Games Germany</strong> – Men's Doubles Top 8; Men's Team &amp; Mixed Doubles Top 16</li>
+            <li><strong>National Age Group Men's Open</strong> – Champion</li>
+            <li><strong>IVP 24/25</strong> – Champion</li>
+            <li><strong>SUNIG 25/26</strong> – Champion</li>
+            <li>Singapore Grand Finale – Men's Singles Top 8</li>
+            <li>Safra Table Tennis Championship – Men's Team 2nd</li>
+            <li><strong>NUS Racketlon</strong> – Champion</li>
+          </ul>
+          <div class="stl-photos">
+            <div class="stl-photo gallery-item" data-caption="World University Games Germany 2025">
+              <img src="images/WUG 2025.JPG" alt="WUG 2025" loading="lazy" />
+            </div>
+            <div class="stl-photo gallery-item" data-caption="National Age Group Men's Open Champion 2025">
+              <img src="images/National Age group 2025 champion.JPG" alt="National Age Group 2025" loading="lazy" />
+            </div>
+            <div class="stl-photo gallery-item" data-caption="SUNIG Champion AY25/26">
+              <img src="images/SUNIG 2526 champion solo pic.JPG" alt="SUNIG 2526" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="stl-item reveal-up">
+        <div class="stl-year">2024</div>
+        <div class="stl-card">
+          <h3>National Intermediate Squad</h3>
+          <p class="stl-sub">Singapore National Table Tennis Team · NUS Table Tennis Captain</p>
+          <ul>
+            <li><strong>IVP 23/24</strong> – Champion</li>
+            <li><strong>SUNIG 24/25</strong> – 2nd Place</li>
+            <li>National B Division – Men's Singles 3rd, Men's Doubles 3rd</li>
+            <li>Participated in WTT Singapore Smash</li>
+            <li>Safra Table Tennis Championship – Men's Team 2nd</li>
+          </ul>
+          <div class="stl-photos">
+            <div class="stl-photo gallery-item" data-caption="WTT Singapore Smash 2024">
+              <img src="images/Singapore Smash 2024.JPG" alt="Singapore Smash 2024" loading="lazy" />
+            </div>
+            <div class="stl-photo gallery-item" data-caption="IVP Champion AY24/25 — Team Event">
+              <img src="images/IVP2425 Champion team event.JPG" alt="IVP 2425" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2023 -->
+      <div class="stl-item reveal-up">
+        <div class="stl-year">2023</div>
+        <div class="stl-card">
+          <h3>National Intermediate Squad</h3>
+          <p class="stl-sub">Singapore National Table Tennis Team</p>
+          <ul>
+            <li><strong>World University Games Chengdu</strong> – Top 16 (Singles, Doubles, Team)</li>
+            <li><strong>SUNIG 23/24</strong> – Champion</li>
+            <li><strong>Bukit Gombak Invitational TT Team Championship</strong> – Champion</li>
+            <li>Singapore Grand Finale – Men's Singles 3rd, Men's Doubles 3rd</li>
+            <li>Participated in WTT Doha Feeder &amp; Contender</li>
+            <li>Participated in WTT Singapore Smash</li>
+            <li>Safra Table Tennis Championship – Men's Team 2nd</li>
+          </ul>
+          <div class="stl-photos">
+            <div class="stl-photo gallery-item" data-caption="World University Games Chengdu 2023">
+              <img src="images/WUG 2023.JPG" alt="WUG 2023" loading="lazy" />
+            </div>
+            <div class="stl-photo gallery-item" data-caption="WTT Doha 2023">
+              <img src="images/Doha WTT 2023.JPG" alt="WTT Doha 2023" loading="lazy" />
+            </div>
+            <div class="stl-photo gallery-item" data-caption="Bukit Gombak Invitational TT Championship 2023 — Champion">
+              <img src="images/Bukit Gombak Invitational Table Tennis Team Championship 2023 Champion.JPG" alt="Bukit Gombak 2023" loading="lazy" />
+            </div>
+            <div class="stl-photo gallery-item" data-caption="SUNIG Champion AY23/24">
+              <img src="images/SUNIG 2324 Champion.JPG" alt="SUNIG 2324" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NS gap -->
+      <div class="stl-ns reveal-up">
+        <div class="stl-ns-year">2020 – 2022</div>
+        <div class="stl-ns-card">
+          <i class="fas fa-shield-halved"></i>
+          Full-time National Service — 1st Commando Battalion, Singapore Army. Officer Commanding (80 personnel), Sword of Merit recipient.
+          <br/><span style="opacity:0.7;font-size:12.5px;"><i class="fas fa-virus" style="color:var(--text3);margin-right:4px;"></i>2020: COVID-19 — competitive table tennis suspended globally.</span>
+          <div class="stl-photos" style="margin-top:12px;">
+            <div class="stl-photo gallery-item" data-caption="Commando Parachute Jump 2021">
+              <img src="images/parachute commando 1.JPG" alt="Parachute jump 2021" loading="lazy" />
+            </div>
+            <div class="stl-photo gallery-item" data-caption="Commando Parachute Jump 2022">
+              <img src="images/parachute commando 2.JPG" alt="Parachute jump 2022" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2019 -->
+      <div class="stl-item reveal-up">
+        <div class="stl-year">2019</div>
+        <div class="stl-card">
+          <h3>National Intermediate Squad</h3>
+          <p class="stl-sub">Singapore National Table Tennis Team</p>
+          <ul>
+            <li><strong>2019 ITTF Open:</strong> Team Champion · Singles 3rd · Doubles 3rd · Mixed Doubles 3rd</li>
+            <li><strong>World Junior Championship:</strong> Team 6th place</li>
+            <li>Qualified for <strong>Asian Table Tennis Championship (Men's)</strong></li>
+            <li>Czech Republic ITTF Junior Circuit – Team 3rd</li>
+            <li>Chinese Taipei ITTF Junior Circuit – Doubles Top 8</li>
+          </ul>
+          <div class="stl-photos">
+            <div class="stl-photo gallery-item" data-caption="ITTF Chinese Taipei Junior Circuit 2019">
+              <img src="images/Taiwan 2019 ITTF.JPG" alt="ITTF Chinese Taipei 2019" loading="lazy" />
+            </div>
+            <div class="stl-photo gallery-item" data-caption="World Junior Championship 2019">
+              <img src="images/World Junior 2019.JPG" alt="World Junior 2019" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2018 -->
+      <div class="stl-item reveal-up">
+        <div class="stl-year">2018</div>
+        <div class="stl-card">
+          <h3>National Youth Team</h3>
+          <ul>
+            <li><strong>SEA Junior &amp; Cadet Championship:</strong> Team Champion · Doubles Champion · Mixed Doubles 2nd</li>
+            <li><strong>ASEAN School Games:</strong> Team Champion · Doubles 2nd</li>
+            <li>Qualified for Youth Olympic Games Training Squad</li>
+            <li>Paraguay ITTF Junior circuit – Team 2nd · Singapore Hopes – Team Champion · China Silk Road – Team 3rd</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2017 -->
+      <div class="stl-item reveal-up">
+        <div class="stl-year">2017</div>
+        <div class="stl-card">
+          <h3>National Youth Team</h3>
+          <ul>
+            <li><strong>SEA Junior &amp; Cadet Championship:</strong> Team Champion · Doubles Champion</li>
+            <li><strong>ASEAN School Games:</strong> Team Champion · Doubles 2nd</li>
+            <li>Singapore Hopes Invitational – Team 2nd</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2015–2016 -->
+      <div class="stl-item reveal-up">
+        <div class="stl-year">2015–2016</div>
+        <div class="stl-card">
+          <h3>National Youth Team</h3>
+          <ul>
+            <li><strong>C Division Individual Champion</strong> (2016)</li>
+            <li>Represented Singapore – ASEAN School Games (2016) &amp; Asian School Games (2016)</li>
+            <li>Japan Junior Invitational Tournament – Team 2nd (2016)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ---- Photo Gallery ---- -->
+    <div class="gallery-header">
+      <h3>Photo <span class="grad-text">Highlights</span></h3>
+      <p>Click any photo to view full size · use arrow keys or buttons to navigate</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-caption="World University Games Germany 2025">
+        <span class="g-tag">WUG 2025</span>
+        <img src="images/WUG 2025.JPG" alt="WUG Germany 2025" loading="lazy" />
+        <div class="gallery-caption">World University Games Germany 2025</div>
+      </div>
+      <div class="gallery-item" data-caption="WUG Germany 2025">
+        <span class="g-tag">WUG 2025</span>
+        <img src="images/WUG 2025 2.JPG" alt="WUG Germany 2025" loading="lazy" />
+        <div class="gallery-caption">WUG Germany 2025</div>
+      </div>
+      <div class="gallery-item" data-caption="World University Games 2025 — Team Photo">
+        <span class="g-tag">WUG 2025</span>
+        <img src="images/WUG 2025 3 team photo.JPG" alt="WUG 2025 Team" loading="lazy" />
+        <div class="gallery-caption">WUG 2025 — Singapore Team</div>
+      </div>
+      <div class="gallery-item" data-caption="World University Games Chengdu 2023">
+        <span class="g-tag">WUG 2023</span>
+        <img src="images/WUG 2023.JPG" alt="WUG Chengdu 2023" loading="lazy" />
+        <div class="gallery-caption">World University Games Chengdu 2023</div>
+      </div>
+      <div class="gallery-item" data-caption="WUG Chengdu 2023 — Team Photo">
+        <span class="g-tag">WUG 2023</span>
+        <img src="images/WUG team photo 2023.JPG" alt="WUG Team 2023" loading="lazy" />
+        <div class="gallery-caption">WUG 2023 — Singapore Team</div>
+      </div>
+      <div class="gallery-item" data-caption="WTT Doha 2023">
+        <span class="g-tag">WTT 2023</span>
+        <img src="images/Doha WTT 2023.JPG" alt="WTT Doha 2023" loading="lazy" />
+        <div class="gallery-caption">WTT Doha Feeder & Contender 2023</div>
+      </div>
+      <div class="gallery-item" data-caption="WTT Singapore Smash 2024">
+        <span class="g-tag">WTT 2024</span>
+        <img src="images/Singapore Smash 2024.JPG" alt="WTT Singapore Smash 2024" loading="lazy" />
+        <div class="gallery-caption">WTT Singapore Smash 2024</div>
+      </div>
+      <div class="gallery-item" data-caption="ITTF Chinese Taipei Junior Circuit 2019">
+        <span class="g-tag">2019</span>
+        <img src="images/Taiwan 2019 ITTF.JPG" alt="ITTF Chinese Taipei 2019" loading="lazy" />
+        <div class="gallery-caption">ITTF Chinese Taipei Junior Circuit 2019</div>
+      </div>
+      <div class="gallery-item" data-caption="World Junior Championship 2019">
+        <span class="g-tag">2019</span>
+        <img src="images/World Junior 2019.JPG" alt="World Junior 2019" loading="lazy" />
+        <div class="gallery-caption">World Junior Championship 2019</div>
+      </div>
+      <div class="gallery-item" data-caption="National Age Group Men's Open Champion 2025">
+        <span class="g-tag">2025</span>
+        <img src="images/National Age group 2025 champion.JPG" alt="National Age Group Champion 2025" loading="lazy" />
+        <div class="gallery-caption">National Age Group Men's Open — Champion 2025</div>
+      </div>
+      <div class="gallery-item" data-caption="SUNIG Champion AY23/24">
+        <span class="g-tag">SUNIG</span>
+        <img src="images/SUNIG 2324 Champion.JPG" alt="SUNIG Champion 2023" loading="lazy" />
+        <div class="gallery-caption">SUNIG Table Tennis — Champion AY23/24</div>
+      </div>
+      <div class="gallery-item" data-caption="SUNIG 2025">
+        <span class="g-tag">SUNIG</span>
+        <img src="images/SUNIG 2025.JPG" alt="SUNIG 2025" loading="lazy" />
+        <div class="gallery-caption">SUNIG Table Tennis 2025</div>
+      </div>
+      <div class="gallery-item" data-caption="SUNIG Champion AY25/26">
+        <span class="g-tag">SUNIG</span>
+        <img src="images/SUNIG 2526 champion solo pic.JPG" alt="SUNIG Champion 2526" loading="lazy" />
+        <div class="gallery-caption">SUNIG Table Tennis — Champion AY25/26</div>
+      </div>
+      <div class="gallery-item" data-caption="IVP Champion AY24/25 — Team Event">
+        <span class="g-tag">IVP</span>
+        <img src="images/IVP2425 Champion team event.JPG" alt="IVP Champion 2425" loading="lazy" />
+        <div class="gallery-caption">IVP Table Tennis — Champion AY24/25</div>
+      </div>
+      <div class="gallery-item" data-caption="IVP Champion AY25/26">
+        <span class="g-tag">IVP</span>
+        <img src="images/IVP 2526 Champion.JPG" alt="IVP Champion 2526" loading="lazy" />
+        <div class="gallery-caption">IVP Table Tennis — Champion AY25/26</div>
+      </div>
+      <div class="gallery-item" data-caption="NUS Racketlon Champion 2025">
+        <span class="g-tag">2025</span>
+        <img src="images/Racketlon champion 2025.JPG" alt="Racketlon Champion 2025" loading="lazy" />
+        <div class="gallery-caption">NUS Racketlon — Champion 2025</div>
+      </div>
+      <div class="gallery-item" data-caption="IHG Road Relay Champion AY25/26">
+        <span class="g-tag">Road Relay</span>
+        <img src="images/Road Relay 2526 Champion Solo pic running.JPG" alt="Road Relay Champion" loading="lazy" />
+        <div class="gallery-caption">IHG Road Relay — Champion AY25/26</div>
+      </div>
+      <div class="gallery-item" data-caption="IHG Road Relay AY24/25 — 2nd Place">
+        <span class="g-tag">Road Relay</span>
+        <img src="images/Road Relay 2425 2nd Team photo.JPG" alt="Road Relay 2425" loading="lazy" />
+        <div class="gallery-caption">IHG Road Relay — 2nd Place AY24/25</div>
+      </div>
+      <div class="gallery-item" data-caption="Bukit Gombak Invitational TT Championship 2023 — Champion">
+        <span class="g-tag">2023</span>
+        <img src="images/Bukit Gombak Invitational Table Tennis Team Championship 2023 Champion.JPG" alt="Bukit Gombak 2023" loading="lazy" />
+        <div class="gallery-caption">Bukit Gombak Invitational — Champion 2023</div>
+      </div>
+      <div class="gallery-item" data-caption="WUG 2023">
+        <span class="g-tag">WUG 2023</span>
+        <img src="images/WUG 2023 2.JPG" alt="WUG 2023" loading="lazy" />
+        <div class="gallery-caption">World University Games Chengdu 2023</div>
+      </div>
+      <div class="gallery-item" data-caption="National Age Group Men's Open Champion 2025">
+        <span class="g-tag">2025</span>
+        <img src="images/National Age group 2025 champion 2.JPG" alt="National Age Group 2025" loading="lazy" />
+        <div class="gallery-caption">National Age Group Men's Open — Champion 2025</div>
+      </div>
+      <div class="gallery-item" data-caption="IVP Champion AY25/26 — Solo">
+        <span class="g-tag">IVP</span>
+        <img src="images/IVP 2526 champion solo pic.JPG" alt="IVP Champion solo 2526" loading="lazy" />
+        <div class="gallery-caption">IVP Table Tennis — Champion AY25/26</div>
+      </div>
+      <div class="gallery-item" data-caption="IHG Road Relay AY23/24 — 3rd Place">
+        <span class="g-tag">Road Relay</span>
+        <img src="images/Road Relay 2324 3rd.JPG" alt="Road Relay 2324 3rd" loading="lazy" />
+        <div class="gallery-caption">IHG Road Relay — 3rd Place AY23/24</div>
+      </div>
+      <div class="gallery-item" data-caption="IHG Road Relay AY23/24">
+        <span class="g-tag">Road Relay</span>
+        <img src="images/Road Relay 2324.JPG" alt="Road Relay 2324" loading="lazy" />
+        <div class="gallery-caption">IHG Road Relay AY23/24</div>
+      </div>
+      <div class="gallery-item" data-caption="Main photo 1">
+        <span class="g-tag">Profile</span>
+        <img src="images/Main photo 1.JPG" alt="Dominic Koh" loading="lazy" />
+        <div class="gallery-caption">Dominic Koh</div>
+      </div>
+      <div class="gallery-item" data-caption="Main photo 2">
+        <span class="g-tag">Profile</span>
+        <img src="images/Main photo 2.JPG" alt="Dominic Koh" loading="lazy" />
+        <div class="gallery-caption">Dominic Koh</div>
+      </div>
+    </div>
+
+    <!-- ---- YouTube Video Highlights ---- -->
+    <div class="video-header">
+      <h3>Match <span class="grad-text">Highlights</span></h3>
+      <p>Watch Dominic in action at international competitions</p>
+    </div>
+    <div class="video-grid">
+      <div class="video-wrap reveal-up">
+        <a href="https://www.youtube.com/watch?v=YYZXHA24IqI" target="_blank" rel="noopener" class="yt-thumb-link">
+          <img src="https://img.youtube.com/vi/YYZXHA24IqI/hqdefault.jpg" alt="Table Tennis 2023 match" loading="lazy" />
+          <div class="yt-play-btn"><i class="fab fa-youtube"></i></div>
+        </a>
+        <div class="video-label"><i class="fab fa-youtube"></i> WTT Match Highlights — 2023</div>
+      </div>
+      <div class="video-wrap reveal-up">
+        <a href="https://www.youtube.com/watch?v=GtnZ05YSkmc" target="_blank" rel="noopener" class="yt-thumb-link">
+          <img src="https://img.youtube.com/vi/GtnZ05YSkmc/hqdefault.jpg" alt="Table Tennis 2023 match" loading="lazy" />
+          <div class="yt-play-btn"><i class="fab fa-youtube"></i></div>
+        </a>
+        <div class="video-label"><i class="fab fa-youtube"></i> Match Highlights — 2023</div>
+      </div>
+      <div class="video-wrap reveal-up">
+        <a href="https://www.youtube.com/watch?v=jXCga4t2r7Y" target="_blank" rel="noopener" class="yt-thumb-link">
+          <img src="https://img.youtube.com/vi/jXCga4t2r7Y/hqdefault.jpg" alt="Table Tennis 2023 match" loading="lazy" />
+          <div class="yt-play-btn"><i class="fab fa-youtube"></i></div>
+        </a>
+        <div class="video-label"><i class="fab fa-youtube"></i> Match Highlights — 2023</div>
+      </div>
+      <div class="video-wrap reveal-up">
+        <a href="https://www.youtube.com/watch?v=n2WesQ1pSsA" target="_blank" rel="noopener" class="yt-thumb-link">
+          <img src="https://img.youtube.com/vi/n2WesQ1pSsA/hqdefault.jpg" alt="Table Tennis 2019 match" loading="lazy" />
+          <div class="yt-play-btn"><i class="fab fa-youtube"></i></div>
+        </a>
+        <div class="video-label"><i class="fab fa-youtube"></i> 2019 ITTF Open</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================================
+     VOLUNTEERING
+     ======================================================== -->
+<section id="volunteering" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">08 / Community</span>
+      <h2 class="section-title">Giving <span class="grad-text">Back</span></h2>
+    </div>
+    <div class="vol-grid">
+      <div class="vol-card reveal-up">
+        <img src="images/Healthy Body, Healthy Me!.jpeg" alt="Healthy Body Healthy Me clinic" class="vol-img" loading="lazy" />
+        <h3>Table Tennis Clinic Volunteer</h3>
+        <h4>Bukit Gombak Community Sports Network</h4>
+        <span class="vol-date">Jun 2024 – Present</span>
+        <p>"Healthy Body, Healthy Me!" — promoting healthy living through table tennis and making the sport accessible for everyone in the community.</p>
+      </div>
+      <div class="vol-card reveal-up">
+        <div class="vol-icon" style="color:var(--gold)"><i class="fas fa-hand-holding-heart"></i></div>
+        <h3>Fundraising Volunteer</h3>
+        <h4>Metropolitan YMCA Singapore</h4>
+        <span class="vol-date">May 2018</span>
+        <p>Island-wide street collection to raise funds for the elderly through YMCA Flag Day on 6 June 2018.</p>
+      </div>
+      <div class="vol-card reveal-up">
+        <div class="vol-icon" style="color:var(--red)"><i class="fas fa-flag"></i></div>
+        <h3>NDP 2013 Performer</h3>
+        <h4>NDP Committee</h4>
+        <span class="vol-date">Jan – Aug 2013</span>
+        <p>Performer in the table tennis section of Singapore's National Day Parade 2013.</p>
+      </div>
+      <div class="vol-card reveal-up">
+        <img src="images/seagames opening.jpeg" alt="SEA Games 2015 Opening Ceremony" class="vol-img" loading="lazy" />
+        <h3>SEA Games 2015 Opening Ceremony</h3>
+        <h4>SEA Games Organising Committee</h4>
+        <span class="vol-date">Jan – Jun 2015</span>
+        <p>Performer in the Opening Ceremony of the Southeast Asian Games 2015 held in Singapore.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     CONTACT
+     ======================================================== -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">09 / Contact</span>
+      <h2 class="section-title">Get In <span class="grad-text">Touch</span></h2>
+      <p class="section-sub">Open to internship and full-time opportunities in AI/ML engineering and software development</p>
+    </div>
+    <div class="contact-row">
+      <a href="mailto:domksj23@gmail.com" class="contact-card reveal-up">
+        <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+        <h4>Email</h4>
+        <p>domksj23@gmail.com</p>
+      </a>
+      <a href="https://www.linkedin.com/in/dominic-koh-323752281/" target="_blank" class="contact-card reveal-up">
+        <div class="cc-icon"><i class="fab fa-linkedin-in"></i></div>
+        <h4>LinkedIn</h4>
+        <p>Dominic Koh</p>
+      </a>
+      <a href="https://github.com/dominopizzaaaa" target="_blank" class="contact-card reveal-up">
+        <div class="cc-icon"><i class="fab fa-github"></i></div>
+        <h4>GitHub</h4>
+        <p>dominopizzaaaa</p>
+      </a>
+      <a href="tel:+6587175667" class="contact-card reveal-up">
+        <div class="cc-icon"><i class="fas fa-phone"></i></div>
+        <h4>Phone</h4>
+        <p>+65 8717 5667</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer>
+  <div class="container">
+    <p class="footer-name">Dominic Koh</p>
+    <p class="footer-sub">NUS Computer Science · AI/ML Engineer · Singapore National Athlete</p>
+    <div class="footer-socials">
+      <a href="mailto:domksj23@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/dominic-koh-323752281/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/dominopizzaaaa" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Dominic Koh. Built with passion.</p>
+  </div>
+</footer>
+
+<!-- ========================================================
+     LIGHTBOX (shared across gallery + awards)
+     ======================================================== -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+  <img class="lb-img" src="" alt="Full size photo" />
+  <button class="lb-nav lb-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+  <div class="lb-caption"></div>
+</div>
+
+<!-- Back to top -->
+<button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- ========================================================
+     JS modules
+     ======================================================== -->
+<script src="js/particles.js"></script>
+<script src="js/typing.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/trail.js"></script>
+<script src="js/intro.js"></script>
+
+<!-- Custom cursor elements -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+</body>
+</html>

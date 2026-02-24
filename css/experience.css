@@ -1,0 +1,74 @@
+/* ==============================================
+   EXPERIENCE — Vertical timeline
+   ============================================== */
+
+.timeline { position: relative; padding-left: 28px; }
+.timeline::before {
+  content: ''; position: absolute; left: 0; top: 12px; bottom: 0;
+  width: 2px; background: linear-gradient(to bottom, var(--blue), var(--purple), transparent);
+  border-radius: 1px;
+}
+
+.tl-item { position: relative; margin-bottom: 40px; }
+.tl-dot {
+  position: absolute; left: -37px; top: 22px;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--grad); box-shadow: 0 0 0 4px rgba(56,189,248,0.15);
+  transition: var(--tr);
+}
+.tl-item:hover .tl-dot { box-shadow: 0 0 0 8px rgba(56,189,248,0.2); }
+
+.tl-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 28px 32px; transition: var(--tr);
+}
+.tl-card:hover {
+  border-color: rgba(56,189,248,0.25);
+  background: rgba(255,255,255,0.055);
+  transform: translateY(-2px); box-shadow: var(--shadow-sm);
+}
+
+.tl-top {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 16px; gap: 20px; flex-wrap: wrap;
+}
+.tl-company-info { display: flex; gap: 14px; align-items: flex-start; }
+
+/* Company logos */
+.tl-logo {
+  width: 48px; height: 48px; border-radius: 10px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-size: 12px; font-weight: 700;
+}
+.dso-logo    { background: rgba(56,189,248,0.15);  color: var(--blue); }
+.htx-logo    { background: rgba(167,139,250,0.15); color: var(--purple); }
+.xbq-logo    { background: rgba(52,211,153,0.15);  color: var(--green); }
+.certis-logo { background: rgba(251,191,36,0.15);  color: var(--gold); }
+.nus-ta-logo { background: rgba(239,68,68,0.13);   color: #f87171; }
+
+.tl-card h3 { font-size: 17px; font-weight: 700; font-family: var(--font-head); }
+.tl-card h4 { font-size: 14px; color: var(--blue); font-weight: 500; margin-top: 2px; }
+
+.tl-meta { display: flex; flex-direction: column; gap: 4px; align-items: flex-end; flex-shrink: 0; }
+.tl-meta span {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 13px; color: var(--text3); font-family: var(--font-mono);
+}
+.tl-meta i { font-size: 11px; }
+
+.tl-bullets { padding-left: 20px; margin-top: 4px; }
+.tl-bullets li {
+  color: var(--text2); font-size: 14.5px; margin-bottom: 8px;
+  list-style: disc; padding-left: 4px; line-height: 1.65;
+}
+.tl-bullets li::marker { color: var(--blue); }
+.tl-bullets li strong { color: var(--text); }
+
+/* Featured (current) experience card — gradient title */
+.featured-card h3 {
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* Override the hover transform for featured card (gradient border handles the effect) */
+.featured-card:hover { transform: none !important; }

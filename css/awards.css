@@ -1,0 +1,69 @@
+/* ==============================================
+   AWARDS — Tabbed award panels
+   ============================================== */
+
+.award-tabs {
+  display: flex; gap: 8px; justify-content: center; margin-bottom: 40px; flex-wrap: wrap;
+}
+.atab {
+  background: var(--surface); border: 1px solid var(--border); color: var(--text2);
+  padding: 10px 24px; border-radius: 100px; font-size: 14px; font-weight: 500;
+  cursor: pointer; transition: var(--tr);
+}
+.atab:hover  { border-color: var(--blue); color: var(--blue); }
+.atab.active { background: var(--grad); border-color: transparent; color: #fff; }
+
+.award-panel        { display: none; }
+.award-panel.active { display: block; }
+
+/* Award list items */
+.award-list { display: flex; flex-direction: column; gap: 16px; }
+.aw-item {
+  display: flex; gap: 18px; align-items: flex-start;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 22px 26px; transition: var(--tr);
+}
+.aw-item:hover {
+  border-color: rgba(56,189,248,0.25); transform: translateX(4px); box-shadow: var(--shadow-sm);
+}
+
+/* Icon circles */
+.aw-icon {
+  width: 46px; height: 46px; border-radius: 12px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 20px;
+}
+.aw-icon.gold   { background: rgba(251,191,36,0.15);  color: var(--gold); }
+.aw-icon.silver { background: rgba(148,163,184,0.15); color: #94a3b8; }
+.aw-icon.bronze { background: rgba(234,179,8,0.1);    color: #ca8a04; }
+/* Dean's List — prestigious gold gradient treatment */
+.aw-icon.dean {
+  background: linear-gradient(135deg, rgba(251,191,36,0.22), rgba(245,158,11,0.18));
+  color: var(--gold); border: 1px solid rgba(251,191,36,0.35);
+  box-shadow: 0 2px 12px rgba(251,191,36,0.15);
+}
+
+.aw-body h4 { font-size: 16px; font-weight: 700; margin-bottom: 3px; }
+.aw-source {
+  font-size: 13px; color: var(--blue); font-family: var(--font-mono); margin-bottom: 6px;
+}
+.aw-desc { font-size: 13.5px; color: var(--text2); line-height: 1.6; }
+.aw-desc strong { color: var(--text); }
+
+/* Certificate image thumbnails in awards */
+.aw-img-row { display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap; }
+.aw-cert-thumb {
+  width: 100px; height: 70px; border-radius: var(--radius-sm); object-fit: cover;
+  border: 1px solid var(--border); cursor: pointer; transition: var(--tr);
+}
+.aw-cert-thumb:hover { transform: scale(1.05); border-color: var(--blue); }
+
+/* Military photos within awards (auto-wrap 3-per-row) */
+.mil-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 24px; }
+.mil-photo {
+  border-radius: var(--radius-sm); overflow: hidden;
+  aspect-ratio: 4/3; cursor: pointer; transition: var(--tr);
+  border: 1px solid var(--border);
+}
+.mil-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.mil-photo:hover img { transform: scale(1.05); }
+.mil-photo:hover { border-color: rgba(56,189,248,0.4); }

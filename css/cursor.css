@@ -1,0 +1,72 @@
+/* ==============================================
+   CURSOR — Custom cursor dot + lagging ring
+   ============================================== */
+
+/* Hide default cursor on non-touch devices */
+@media (hover: hover) {
+  html, body,
+  a, button, input, label, select, textarea,
+  .btn-primary, .btn-outline, .social-icon, .atab,
+  .gallery-item, .stl-photo, .aw-cert-thumb,
+  .skill-cat, [role="button"] {
+    cursor: none !important;
+  }
+}
+
+/* Base cursor elements */
+#cursor-dot, #cursor-ring {
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  border-radius: 50%;
+}
+
+/* Inner dot — inverts colors it passes over */
+#cursor-dot {
+  width: 8px; height: 8px;
+  background: #fff;
+  mix-blend-mode: difference;
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+/* Outer ring — lags behind with lerp */
+#cursor-ring {
+  width: 44px; height: 44px;
+  border: 1.5px solid rgba(56,189,248,0.5);
+  background: rgba(56,189,248,0.04);
+  transition:
+    width  0.25s cubic-bezier(0.4,0,0.2,1),
+    height 0.25s cubic-bezier(0.4,0,0.2,1),
+    border-color 0.25s ease,
+    background   0.25s ease,
+    box-shadow   0.25s ease,
+    opacity      0.3s ease;
+}
+
+/* Hover state (over interactive elements) */
+#cursor-ring.hover {
+  width: 62px; height: 62px;
+  border-color: var(--blue);
+  background: rgba(56,189,248,0.09);
+  box-shadow:
+    0 0 18px rgba(56,189,248,0.3),
+    inset 0 0 12px rgba(56,189,248,0.06);
+}
+#cursor-dot.hover {
+  width: 4px; height: 4px;
+}
+
+/* Click state */
+#cursor-ring.click {
+  transform: translate(-50%, -50%) scale(0.82);
+  background: rgba(56,189,248,0.22);
+  border-color: var(--blue);
+}
+
+/* Fade out when cursor leaves window */
+#cursor-dot, #cursor-ring {
+  opacity: 1;
+}

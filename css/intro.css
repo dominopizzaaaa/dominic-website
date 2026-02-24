@@ -1,0 +1,123 @@
+/* ==============================================
+   INTRO — Cinematic split-screen reveal
+   ============================================== */
+
+/* Prevent scroll + hide scrollbar during intro */
+.intro-lock {
+  overflow: hidden !important;
+  height: 100vh;
+}
+
+/* ---- Overlay container ---- */
+#intro-overlay {
+  position: fixed; inset: 0; z-index: 100000;
+  pointer-events: all;
+}
+
+/* ---- Two sliding panels ---- */
+.i-panel {
+  position: absolute; left: 0; right: 0;
+  background: #070b16;          /* slightly darker for drama */
+  transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1);
+  will-change: transform;
+}
+.i-top { top: 0;    height: 50.5%; } /* 0.5% overlap eliminates gap */
+.i-bot { bottom: 0; height: 50.5%; }
+
+/* Exit: each panel flies off screen */
+#intro-overlay.exit .i-top { transform: translateY(-101%); }
+#intro-overlay.exit .i-bot { transform: translateY(101%); }
+
+/* Fade the center content slightly ahead of the split */
+#intro-overlay.exit .i-center { opacity: 0; transition: opacity 0.2s ease; }
+
+/* ---- Centre content (sits above both panels) ---- */
+.i-center {
+  position: absolute; inset: 0; z-index: 1;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 20px; pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+/* Subtle HUD corner brackets on the center group */
+.i-center::before,
+.i-center::after {
+  content: '';
+  position: absolute;
+  width: 28px; height: 28px;
+  opacity: 0;
+  animation: fadeUp 0.5s 0.05s ease forwards;
+}
+.i-center::before {
+  top: calc(50% - 80px); left: calc(50% - 160px);
+  border-top: 1.5px solid rgba(56,189,248,0.35);
+  border-left: 1.5px solid rgba(56,189,248,0.35);
+}
+.i-center::after {
+  bottom: calc(50% - 80px); right: calc(50% - 160px);
+  border-bottom: 1.5px solid rgba(56,189,248,0.35);
+  border-right: 1.5px solid rgba(56,189,248,0.35);
+}
+
+/* ---- Name / logo ---- */
+.i-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(5rem, 15vw, 9.5rem);
+  font-weight: 700;
+  letter-spacing: -5px;
+  color: #f1f5f9;
+  line-height: 1;
+  opacity: 0;
+  animation: fadeUp 0.5s 0.2s cubic-bezier(0.4,0,0.2,1) forwards;
+  text-shadow: 0 0 80px rgba(56,189,248,0.12);
+}
+.i-dot { color: #38bdf8; }
+
+/* ---- Expanding bar ---- */
+.i-bar {
+  width: 0; height: 2px; border-radius: 2px;
+  background: linear-gradient(90deg, #38bdf8, #818cf8, #a78bfa);
+  box-shadow: 0 0 20px rgba(56,189,248,0.9), 0 0 50px rgba(99,102,241,0.5);
+  animation: bar-grow 0.65s 0.6s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+@keyframes bar-grow { to { width: 260px; } }
+
+/* ---- Subtitle ---- */
+.i-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: #475569;
+  letter-spacing: 5px; text-transform: uppercase;
+  opacity: 0;
+  animation: fadeUp 0.4s 0.95s ease forwards;
+}
+
+/* ---- Scanlines on intro panels (CRT / terminal feel) ---- */
+.i-top::after,
+.i-bot::after {
+  content: '';
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.055) 0px,
+    rgba(0,0,0,0.055) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+/* ---- Sweep light across panels ---- */
+@keyframes intro-sweep {
+  0%   { transform: translateX(-100%) skewX(-8deg); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateX(150%) skewX(-8deg); opacity: 0; }
+}
+.i-top::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(56,189,248,0.06) 50%, transparent 100%);
+  animation: intro-sweep 1.8s 0.3s ease forwards;
+  pointer-events: none;
+}
