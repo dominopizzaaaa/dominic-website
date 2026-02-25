@@ -1,0 +1,595 @@
+/* ============================================================
+   modules.css — GRAND Modules Taken section
+   - Premium hero header
+   - Segmented control
+   - Category cards in a grid
+   - Click pill -> elegant popover (module name + extras)
+   - Grade mapping:
+       A+ : Rose-Platinum (purplish pink, grand tier)
+       A  : Gold
+       A- : Silver
+       B+ : Bronze
+     In Progress: dotted + subtle halo
+   ============================================================ */
+
+
+/* ============================================================
+   0) Base shell
+   ============================================================ */
+
+.modules-shell{
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(148,163,184,0.14);
+  background: rgba(255,255,255,0.02);
+  padding: 18px;
+}
+
+/* Grand aura */
+.modules-shell.grand::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background:
+    radial-gradient(900px 320px at 10% 0%, rgba(56,189,248,0.16), transparent 55%),
+    radial-gradient(850px 340px at 90% 0%, rgba(167,139,250,0.16), transparent 60%),
+    radial-gradient(900px 420px at 55% 100%, rgba(244,114,182,0.10), transparent 55%);
+  pointer-events:none;
+}
+
+.modules-shell.grand::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(120deg, rgba(255,255,255,0.06), transparent 25%, transparent 75%, rgba(255,255,255,0.04));
+  opacity:0.25;
+  pointer-events:none;
+}
+
+
+/* ============================================================
+   1) HERO STRIP
+   ============================================================ */
+
+.modules-hero{
+  position: relative;
+  z-index: 1;
+  display:grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap:16px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(148,163,184,0.14);
+  background: rgba(0,0,0,0.20);
+  backdrop-filter: blur(10px);
+}
+
+.hero-kicker{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text3);
+}
+
+.hero-title{
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 850;
+  color: rgba(255,255,255,0.94);
+}
+
+.hero-sub{
+  margin-top: 8px;
+  color: var(--text2);
+  font-size: 13px;
+  line-height: 1.65;
+  max-width: 58ch;
+}
+
+/* Metrics */
+.hero-metrics{
+  margin-top: 14px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.metric{
+  flex: 0 0 auto;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(148,163,184,0.14);
+  background: rgba(255,255,255,0.03);
+  min-width: 120px;
+}
+
+.metric-top{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text3);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.metric-val{
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 850;
+  color: rgba(255,255,255,0.95);
+}
+
+.metric-val span{
+  margin-left: 6px;
+  font-size: 12px;
+  color: var(--text3);
+  font-weight: 700;
+}
+
+/* Legend chips */
+.hero-legend{
+  margin-top: 12px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.legend-chip{
+  position: relative;
+  overflow:hidden;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(148,163,184,0.16);
+  background: rgba(148,163,184,0.06);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255,255,255,0.86);
+}
+
+/* Right side */
+.hero-right{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  gap:10px;
+}
+
+.hero-tip{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(148,163,184,0.14);
+  background: rgba(255,255,255,0.03);
+  color: var(--text2);
+  font-size: 13px;
+}
+
+.hero-tip i{ color: rgba(255,255,255,0.80); }
+
+
+/* ============================================================
+   2) SEGMENTED CONTROL
+   ============================================================ */
+
+.modules-controls{
+  display:flex;
+  gap:0;
+  border-radius: 999px;
+  overflow:hidden;
+  border: 1px solid rgba(148,163,184,0.16);
+  background: rgba(255,255,255,0.03);
+}
+
+.modules-tab{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  border: none;
+  background: transparent;
+  color: rgba(255,255,255,0.80);
+  padding: 12px 12px;
+  cursor:pointer;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+
+.modules-tab i{ opacity:0.9; }
+
+.modules-tab:hover{ transform: translateY(-1px); }
+
+.modules-tab.is-active{
+  background: linear-gradient(135deg, rgba(56,189,248,0.14), rgba(167,139,250,0.12));
+  color: rgba(255,255,255,0.95);
+}
+
+.modules-views{ position: relative; z-index:1; margin-top: 14px; }
+.modules-view{ display:none; }
+.modules-view.is-active{ display:block; }
+
+
+/* ============================================================
+   3) GRID OF CATEGORY CARDS
+   ============================================================ */
+
+.mod-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.mod-grid.two{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mod-card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(148,163,184,0.14);
+  background: rgba(0,0,0,0.18);
+  padding: 14px;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.mod-card::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  background:
+    radial-gradient(420px 160px at 20% 0%, rgba(56,189,248,0.10), transparent 60%),
+    radial-gradient(420px 160px at 90% 0%, rgba(167,139,250,0.10), transparent 65%);
+  opacity:0.6;
+  pointer-events:none;
+}
+
+.mod-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(56,189,248,0.22);
+  background: rgba(0,0,0,0.22);
+}
+
+.mod-card-head{
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom: 10px;
+}
+
+.mod-card-title{
+  font-weight: 900;
+  color: rgba(255,255,255,0.92);
+  font-size: 14px;
+}
+
+.mod-card-sub{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text3);
+}
+
+/* Pill grid */
+.mod-pill-grid{
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+
+/* ============================================================
+   4) MODULE PILL BASE
+   ============================================================ */
+
+.mod-pill{
+  position: relative;
+  overflow:hidden;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(148,163,184,0.16);
+  background: rgba(148,163,184,0.06);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255,255,255,0.90);
+  cursor: pointer;
+  transition: transform .15s ease, filter .15s ease;
+}
+
+.mod-pill:hover{ transform: translateY(-1px); filter: brightness(1.03); }
+
+.mod-pill em{
+  font-style: normal;
+  opacity: 0.95;
+}
+
+/* TA badge */
+.mod-pill.has-badge{ padding-left: 8px; }
+.pill-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height: 18px;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px dashed rgba(255,255,255,0.30);
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.92);
+  font-size: 10px;
+  letter-spacing: 0.6px;
+}
+
+/* Completed */
+.mod-pill.comp{
+  border-color: rgba(148,163,184,0.16);
+  background: rgba(148,163,184,0.05);
+  color: var(--text2);
+}
+
+
+/* ============================================================
+   5) “GRAND” GRADE STYLES
+   A+ = Rose-Platinum / A = Gold / A- = Silver / B+ = Bronze
+   ============================================================ */
+
+/* Sparkle overlay */
+.mod-pill.aplus::before, .mod-pill.a::before, .mod-pill.aminus::before, .mod-pill.bplus::before,
+.legend-chip.aplus::before, .legend-chip.a::before, .legend-chip.aminus::before, .legend-chip.bplus::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(12px 10px at 18% 30%, rgba(255,255,255,0.55), transparent 60%),
+    radial-gradient(10px 8px  at 72% 38%, rgba(255,255,255,0.35), transparent 60%),
+    radial-gradient(14px 12px at 46% 78%, rgba(255,255,255,0.22), transparent 65%);
+  pointer-events:none;
+  opacity:0.55;
+  mix-blend-mode: overlay;
+}
+
+/* A+ Rose-Platinum */
+.mod-pill.aplus, .legend-chip.aplus{
+  border: 1px solid rgba(220,150,255,0.65);
+  background: linear-gradient(
+    135deg,
+    #ffe6ff 0%,
+    #f4c2ff 18%,
+    #ffd6f9 36%,
+    #e8b3ff 58%,
+    #ffc9f2 78%,
+    #c89bff 100%
+  );
+  color: #2b0033;
+  box-shadow: 0 0 14px rgba(215,150,255,0.28);
+}
+
+/* A Gold */
+.mod-pill.a, .legend-chip.a{
+  border: 1px solid rgba(255,215,0,0.65);
+  background: linear-gradient(
+    135deg,
+    #fff6c2 0%,
+    #ffd24d 18%,
+    #fff2a6 36%,
+    #ffbf00 58%,
+    #fff0a0 78%,
+    #d89b00 100%
+  );
+  color: #3a2a00;
+  box-shadow: 0 0 12px rgba(255,215,0,0.22);
+}
+
+/* A- Silver */
+.mod-pill.aminus, .legend-chip.aminus{
+  border: 1px solid rgba(230,230,230,0.75);
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #d9d9d9 20%,
+    #ffffff 40%,
+    #c9c9c9 60%,
+    #f3f3f3 80%,
+    #bdbdbd 100%
+  );
+  color: #1f1f1f;
+  box-shadow: 0 0 10px rgba(210,210,210,0.18);
+}
+
+/* B+ Bronze */
+.mod-pill.bplus, .legend-chip.bplus{
+  border: 1px solid rgba(205,127,50,0.70);
+  background: linear-gradient(
+    135deg,
+    #ffe0c2 0%,
+    #d98a3a 20%,
+    #ffd0a4 40%,
+    #c46a1f 60%,
+    #ffd4ae 80%,
+    #8f4b17 100%
+  );
+  color: #2a1406;
+  box-shadow: 0 0 10px rgba(205,127,50,0.18);
+}
+
+
+/* ============================================================
+   6) IN PROGRESS (dotted grand outline)
+   ============================================================ */
+
+.mod-pill.inprog, .legend-chip.inprog{
+  position: relative;
+  border: 1px dashed rgba(255,255,255,0.32);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.92);
+}
+
+/* Gentle halo pulse */
+.mod-pill.inprog::after{
+  content:"";
+  position:absolute;
+  inset:-6px;
+  border-radius: 999px;
+  background: radial-gradient(20px 20px at 30% 40%, rgba(56,189,248,0.20), transparent 65%),
+              radial-gradient(22px 22px at 70% 50%, rgba(244,114,182,0.14), transparent 65%);
+  filter: blur(6px);
+  opacity:0.55;
+  animation: inprogPulse 2.8s ease-in-out infinite;
+  pointer-events:none;
+}
+
+@keyframes inprogPulse{
+  0%,100%{ transform: scale(0.98); opacity:0.40; }
+  50%{ transform: scale(1.02); opacity:0.70; }
+}
+
+
+/* ============================================================
+   7) OPTIONAL SHINE SWEEP (add class="shine")
+   ============================================================ */
+
+.mod-pill.shine::after,
+.legend-chip.shine::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-140%;
+  width:60%;
+  height:100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,0.65) 45%,
+    rgba(255,255,255,0.92) 50%,
+    rgba(255,255,255,0.65) 55%,
+    transparent 100%
+  );
+  transform: skewX(-18deg);
+  animation: medalShine 3.2s ease-in-out infinite;
+  pointer-events:none;
+  opacity:0.9;
+}
+
+@keyframes medalShine{
+  0%{ left:-140%; }
+  55%{ left:140%; }
+  100%{ left:140%; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .mod-pill.shine::after,
+  .legend-chip.shine::after,
+  .mod-pill.inprog::after{ animation:none; }
+}
+
+
+/* ============================================================
+   8) POPOVER (module name card)
+   ============================================================ */
+
+.mod-popover{
+  position:fixed;
+  z-index: 9999;
+  width: 310px;
+  padding: 12px 12px 10px;
+  border-radius: 16px;
+  border: 1px solid rgba(148,163,184,0.18);
+  background: rgba(10,10,14,0.92);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 22px 60px rgba(0,0,0,0.55);
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events:none;
+}
+
+.mod-popover.is-open{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events:auto;
+}
+
+.pop-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+
+.pop-code{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255,255,255,0.70);
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.pop-grade{
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(148,163,184,0.16);
+  background: rgba(148,163,184,0.08);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255,255,255,0.86);
+}
+
+.pop-name{
+  margin-top: 8px;
+  font-weight: 900;
+  color: rgba(255,255,255,0.96);
+  line-height: 1.25;
+  font-size: 14px;
+}
+
+.pop-extra{
+  margin-top: 8px;
+  color: rgba(255,255,255,0.72);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.pop-fun{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.92);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+
+/* ============================================================
+   9) RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1024px){
+  .modules-hero{ grid-template-columns: 1fr; }
+  .mod-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px){
+  .mod-grid, .mod-grid.two{ grid-template-columns: 1fr; }
+  .metric{ min-width: 0; width: 100%; }
+}
+
+@media (max-width: 480px){
+  .modules-shell{ padding: 14px; }
+  .modules-hero{ padding: 14px; }
+  .hero-title{ font-size: 18px; }
+  .modules-tab{ padding: 12px 10px; }
+}

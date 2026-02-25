@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/experience.css" />
   <link rel="stylesheet" href="css/education.css" />
   <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/modules.css" />
   <link rel="stylesheet" href="css/skills.css" />
   <link rel="stylesheet" href="css/awards.css" />
   <link rel="stylesheet" href="css/sports.css" />
@@ -39,7 +40,7 @@
   <div class="i-panel i-top"></div>
   <div class="i-panel i-bot"></div>
   <div class="i-center">
-    <div class="i-name">Dominic Koh<span class="i-dot">.</span></div>
+    <div class="i-name">DK<span class="i-dot">.</span></div>
     <div class="i-bar"></div>
     <div class="i-sub">PORTFOLIO &middot; 2026</div>
   </div>
@@ -55,15 +56,16 @@
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">DK<span class="logo-dot">.</span></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#awards">Awards</a></li>
-      <li><a href="#sports">Sports</a></li>
-      <li><a href="#contact" class="nav-cta">Contact</a></li>
-    </ul>
+  <li><a href="#about">About</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#education">Education</a></li>
+  <li><a href="#modules">Modules</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#awards">Awards</a></li>
+  <li><a href="#sports">Sports</a></li>
+  <li><a href="#contact" class="nav-cta">Contact</a></li>
+</ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -99,8 +101,8 @@
       </div>
       <div class="hstat-sep"></div>
       <div class="hstat">
-        <span class="hstat-val">National Athlete</span>
-        <span class="hstat-lbl">Singapore Table Tennis Team</span>
+        <span class="hstat-val">Nat'l</span>
+        <span class="hstat-lbl">Table Tennis Athlete</span>
       </div>
       <div class="hstat-sep"></div>
       <div class="hstat">
@@ -130,9 +132,6 @@
   </div>
 </section>
 
-<!-- ========================================================
-     ABOUT
-     ======================================================== -->
 <section id="about" class="section">
   <div class="container">
     <div class="section-header">
@@ -158,7 +157,7 @@
           <div class="acard-icon"><i class="fas fa-star"></i></div>
           <div>
             <h4>3× Dean's List</h4>
-            <p>AY23/24 Semester 1 · AY24/25 Semester 1 · AY24/25 Semester 2</p>
+            <p>AY23/24 S1 · AY24/25 S1 · AY24/25 S2</p>
           </div>
         </div>
         <div class="about-card reveal-left">
@@ -180,9 +179,6 @@
   </div>
 </section>
 
-<!-- ========================================================
-     EXPERIENCE
-     ======================================================== -->
 <section id="experience" class="section section-alt">
   <div class="container">
     <div class="section-header">
@@ -214,6 +210,33 @@
           </ul>
           <div class="tag-row">
             <span>SAR Imaging</span><span>OSMNet</span><span>Deep Learning</span><span>Cross-modal</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NUS Teaching Assistant -->
+      <div class="tl-item reveal-up">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div class="tl-company-info">
+              <div class="tl-logo nus-ta-logo">NUS</div>
+              <div>
+                <h3>Teaching Assistant — CS2103T Software Engineering</h3>
+                <h4>National University of Singapore</h4>
+              </div>
+            </div>
+            <div class="tl-meta">
+              <span><i class="far fa-calendar-alt"></i> Aug 2025 – Dec 2025</span>
+              <span><i class="fas fa-location-dot"></i> Singapore</span>
+            </div>
+          </div>
+          <ul class="tl-bullets">
+            <li>Conducted weekly tutorials and guided students on software engineering principles, OOP design, and the software development lifecycle</li>
+            <li>Reviewed student pull requests, provided code feedback, and assessed project deliverables for a team-based Java project (AB3 fork)</li>
+          </ul>
+          <div class="tag-row">
+            <span>Java</span><span>Software Engineering</span><span>OOP</span><span>Code Review</span><span>Teaching</span>
           </div>
         </div>
       </div>
@@ -306,117 +329,10 @@
   </div>
 </section>
 
-<!-- ========================================================
-     EDUCATION
-     ======================================================== -->
-<section id="education" class="section">
+<section id="projects" class="section">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">03 / Education</span>
-      <h2 class="section-title">Academic <span class="grad-text">Journey</span></h2>
-    </div>
-    <div class="edu-grid">
-
-      <!-- NUS -->
-      <div class="edu-card reveal-up">
-        <div class="edu-card-header nus-header">
-          <div class="edu-logo-text">NUS</div>
-          <div class="edu-gpa-badge">4.83<span>/5</span></div>
-        </div>
-        <div class="edu-body">
-          <h3>National University of Singapore</h3>
-          <p class="edu-degree">B.Comp. Computer Science (First Class Honours)</p>
-          <p class="edu-period"><i class="far fa-calendar-alt"></i> Aug 2023 – Dec 2026</p>
-          <p class="edu-spec"><i class="fas fa-microchip"></i> AI · Database Systems · Computer Networks</p>
-
-          <!-- AY23/24 -->
-          <div class="edu-ay-block">
-            <span class="edu-ay-label">AY23/24 (Year 1)</span>
-            <ul class="edu-list">
-              <li><i class="fas fa-list-ol"></i> Dean's List – Sem 1</li>
-              <li><i class="fas fa-trophy gold-i"></i> Sportsman of the Year (Commendation) – NUS Achievement Awards</li>
-              <li><i class="fas fa-users gold-i"></i> Sports Team of the Year (Distinction) – NUS Achievement Awards</li>
-              <li><i class="fa-solid fa-table-tennis-paddle-ball green-i"></i> SUNIG Champion · IVP Champion · IHG Champion</li>
-              <li><i class="fas fa-person-running green-i"></i> IHG Road Relay – 3rd Place</li>
-            </ul>
-          </div>
-
-          <!-- AY24/25 -->
-          <div class="edu-ay-block">
-            <span class="edu-ay-label">AY24/25 (Year 2)</span>
-            <ul class="edu-list">
-              <li><i class="fas fa-list-ol"></i> Dean's List – Sem 1 &amp; Sem 2</li>
-              <li><i class="fas fa-crown gold-i"></i> Captain, NUS Table Tennis Team</li>
-              <li><i class="fas fa-trophy gold-i"></i> Sportsman of the Year (Commendation) – NUS Achievement Awards</li>
-              <li><i class="fas fa-users gold-i"></i> Sports Team of the Year (Merit) – NUS Achievement Awards</li>
-              <li><i class="fa-solid fa-table-tennis-paddle-ball green-i"></i> SUNIG 2nd · IVP Champion · IHG Champion</li>
-              <li><i class="fas fa-person-running green-i"></i> IHG Road Relay – 2nd Place</li>
-            </ul>
-          </div>
-
-          <!-- AY25/26 -->
-          <div class="edu-ay-block">
-            <span class="edu-ay-label">AY25/26 (Year 3)</span>
-            <ul class="edu-list">
-              <li><i class="fas fa-network-wired gold-i"></i> Top Student – CS3103 (Computer Network Practices)</li>
-              <li><i class="fa-solid fa-table-tennis-paddle-ball green-i"></i> SUNIG Champion · IVP Champion · IHG Champion</li>
-              <li><i class="fas fa-person-running green-i"></i> IHG Road Relay – Champion</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Raffles Institution -->
-      <div class="edu-card reveal-up">
-        <div class="edu-card-header ri-header">
-          <div class="edu-logo-text">RI</div>
-          <div class="edu-gpa-badge">90<span>/90 RP</span></div>
-        </div>
-        <div class="edu-body">
-          <h3>Raffles Institution</h3>
-          <p class="edu-degree">Singapore-Cambridge GCE A-Level</p>
-          <p class="edu-period"><i class="far fa-calendar-alt"></i>Jan 2015 – Dec 2020</p>
-          <ul class="edu-list">
-            <li><i class="fas fa-fire"></i> 3× F.I.R.E. Award (2016, 2018, 2019) — exemplary character</li>
-            <li><i class="fas fa-trophy"></i> National School Games Champion (2015–2019)</li>
-            <li><i class="fas fa-globe-asia"></i> Represented SG – ASEAN School Games (2016–2018)</li>
-            <li><i class="fas fa-globe-asia"></i> Represented SG – Asian School Games 2016</li>
-            <li><i class="fas fa-medal"></i> National Colours Award (2015–2019, 5 consecutive years)</li>
-            <li><i class="fas fa-flask"></i> Silver Award &amp; High Distinction – Raffles Research Education</li>
-            <li><i class="fas fa-users"></i> Table Tennis Captain (C Div 2016, B Div 2018)</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Maris Stella -->
-      <div class="edu-card reveal-up">
-        <div class="edu-card-header ms-header">
-          <div class="edu-logo-text">MS</div>
-        </div>
-        <div class="edu-body">
-          <h3>Maris Stella High School</h3>
-          <p class="edu-degree">PSLE (Primary School Leaving Examination)</p>
-          <p class="edu-period"><i class="far fa-calendar-alt"></i>Jan 2009 – Dec 2014</p>
-          <ul class="edu-list">
-            <li><i class="fas fa-crown"></i> Vice-Head Prefect (2014) | Prefect (2012–2014)</li>
-            <li><i class="fas fa-users"></i> TT Captain – Junior Boys (2013), Senior Boys (2014)</li>
-            <li><i class="fas fa-trophy"></i> National School Games Champion – Individuals (2014)</li>
-            <li><i class="fas fa-award"></i> Sportsmanship Award (2013–2014)</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ========================================================
-     PROJECTS
-     ======================================================== -->
-<section id="projects" class="section section-alt">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">04 / Projects</span>
+      <span class="section-tag">03 / Projects</span>
       <h2 class="section-title">Featured <span class="grad-text">Projects</span></h2>
     </div>
     <div class="projects-grid">
@@ -531,13 +447,599 @@
   </div>
 </section>
 
-<!-- ========================================================
-     SKILLS
-     ======================================================== -->
-<section id="skills" class="section">
+<section id="education" class="section section-alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">05 / Skills</span>
+      <span class="section-tag">04 / Education</span>
+      <h2 class="section-title">Academic <span class="grad-text">Journey</span></h2>
+    </div>
+    <div class="edu-grid">
+
+      <!-- NUS -->
+      <div class="edu-card reveal-up">
+        <div class="edu-card-header nus-header">
+          <div class="edu-logo-text">NUS</div>
+          <div class="edu-gpa-badge">4.83<span>/5</span></div>
+        </div>
+        <div class="edu-body">
+          <h3>National University of Singapore</h3>
+          <p class="edu-degree">B.Comp. Computer Science (First Class Honours)</p>
+          <p class="edu-period"><i class="far fa-calendar-alt"></i> Aug 2023 – Dec 2026</p>
+          <p class="edu-spec"><i class="fas fa-microchip"></i> AI · Database Systems · Computer Networks</p>
+
+          <!-- AY23/24 -->
+          <div class="edu-ay-block">
+            <span class="edu-ay-label">AY23/24 (Year 1)</span>
+            <ul class="edu-list">
+              <li><i class="fas fa-list-ol"></i> Dean's List – Sem 1</li>
+              <li><i class="fas fa-trophy gold-i"></i> Sportsman of the Year (Commendation) – NUS Achievement Awards</li>
+              <li><i class="fas fa-users gold-i"></i> Sports Team of the Year (Distinction) – NUS Achievement Awards</li>
+              <li><i class="fa-solid fa-table-tennis-paddle-ball green-i"></i> SUNIG Champion · IVP Champion · IHG Champion</li>
+              <li><i class="fas fa-person-running green-i"></i> IHG Road Relay – 3rd Place</li>
+            </ul>
+          </div>
+
+          <!-- AY24/25 -->
+          <div class="edu-ay-block">
+            <span class="edu-ay-label">AY24/25 (Year 2)</span>
+            <ul class="edu-list">
+              <li><i class="fas fa-list-ol"></i> Dean's List – Sem 1 &amp; Sem 2</li>
+              <li><i class="fas fa-crown gold-i"></i> Captain, NUS Table Tennis Team</li>
+              <li><i class="fas fa-trophy gold-i"></i> Sportsman of the Year (Commendation) – NUS Achievement Awards</li>
+              <li><i class="fas fa-users gold-i"></i> Sports Team of the Year (Merit) – NUS Achievement Awards</li>
+              <li><i class="fa-solid fa-table-tennis-paddle-ball green-i"></i> SUNIG 2nd · IVP Champion · IHG Champion</li>
+              <li><i class="fas fa-person-running green-i"></i> IHG Road Relay – 2nd Place</li>
+            </ul>
+          </div>
+
+          <!-- AY25/26 -->
+          <div class="edu-ay-block">
+            <span class="edu-ay-label">AY25/26 (Year 3)</span>
+            <ul class="edu-list">
+              <li><i class="fas fa-network-wired gold-i"></i> Top Student – CS3103 (Computer Network Practices)</li>
+              <li><i class="fa-solid fa-table-tennis-paddle-ball green-i"></i> SUNIG Champion · IVP Champion · IHG Champion</li>
+              <li><i class="fas fa-person-running green-i"></i> IHG Road Relay – Champion</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Raffles Institution -->
+      <div class="edu-card reveal-up">
+        <div class="edu-card-header ri-header">
+          <div class="edu-logo-text">RI</div>
+          <div class="edu-gpa-badge">90<span>/90 RP</span></div>
+        </div>
+        <div class="edu-body">
+          <h3>Raffles Institution</h3>
+          <p class="edu-degree">Singapore-Cambridge GCE A-Level</p>
+          <p class="edu-period"><i class="far fa-calendar-alt"></i> 2015 – 2020</p>
+          <ul class="edu-list">
+            <li><i class="fas fa-fire"></i> 3× F.I.R.E. Award (2016, 2018, 2019) — exemplary character</li>
+            <li><i class="fas fa-trophy"></i> National School Games Champion (2015–2019)</li>
+            <li><i class="fas fa-globe-asia"></i> Represented SG – ASEAN School Games (2016–2018)</li>
+            <li><i class="fas fa-globe-asia"></i> Represented SG – Asian School Games 2016</li>
+            <li><i class="fas fa-medal"></i> National Colours Award (2015–2019, 5 consecutive years)</li>
+            <li><i class="fas fa-flask"></i> Silver Award &amp; High Distinction – Raffles Research Education</li>
+            <li><i class="fas fa-users"></i> Table Tennis Captain (C Div 2016, B Div 2018)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Maris Stella -->
+      <div class="edu-card reveal-up">
+        <div class="edu-card-header ms-header">
+          <div class="edu-logo-text">MS</div>
+        </div>
+        <div class="edu-body">
+          <h3>Maris Stella High School</h3>
+          <p class="edu-degree">PSLE (Primary School Leaving Examination)</p>
+          <p class="edu-period"><i class="far fa-calendar-alt"></i> 2009 – 2014</p>
+          <ul class="edu-list">
+            <li><i class="fas fa-crown"></i> Vice-Head Prefect (2014) | Prefect (2012–2014)</li>
+            <li><i class="fas fa-users"></i> TT Captain – Junior Boys (2013), Senior Boys (2014)</li>
+            <li><i class="fas fa-trophy"></i> National School Games Champion – Individuals (2014)</li>
+            <li><i class="fas fa-award"></i> Sportsmanship Award (2013–2014)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="modules" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">04 / Modules</span>
+      <h2 class="section-title">Modules <span class="grad-text">Taken</span></h2>
+    </div>
+
+    <div class="modules-shell grand">
+      <!-- Top summary strip -->
+      <div class="modules-hero">
+        <div class="hero-left">
+          <div class="hero-kicker">Transcript snapshot</div>
+          <div class="hero-title">A compact view of my CS journey</div>
+          <div class="hero-sub">
+            Tap any module code to reveal the full module name and notes.
+            Default view is organised by specialisation.
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric">
+              <div class="metric-top">CAP</div>
+              <div class="metric-val">4.83<span>/5</span></div>
+            </div>
+            <div class="metric">
+              <div class="metric-top">Current</div>
+              <div class="metric-val">2<span>mods</span></div>
+            </div>
+            <div class="metric">
+              <div class="metric-top">Highlights</div>
+              <div class="metric-val">A+<span> streak</span></div>
+            </div>
+          </div>
+
+          <div class="hero-legend">
+            <span class="legend-chip aplus shine">A+ (Rose-Platinum)</span>
+            <span class="legend-chip a shine">A (Gold)</span>
+            <span class="legend-chip aminus">A- (Silver)</span>
+            <span class="legend-chip bplus">B+ (Bronze)</span>
+            <span class="legend-chip inprog">In Progress</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- Segmented control -->
+          <div class="modules-controls" role="tablist" aria-label="Arrange modules">
+            <button class="modules-tab is-active" data-view="spec" role="tab" aria-selected="true">
+              <i class="fas fa-layer-group"></i> By Specialisation
+            </button>
+            <button class="modules-tab" data-view="year" role="tab" aria-selected="false">
+              <i class="fas fa-calendar-alt"></i> By Year
+            </button>
+          </div>
+
+          <div class="hero-tip">
+            <i class="fas fa-hand-pointer"></i>
+            Tip: click a pill to see the module name
+          </div>
+        </div>
+      </div>
+
+      <!-- Views -->
+      <div class="modules-views">
+        <!-- ======================
+             VIEW 1: SPECIALISATION (DEFAULT)
+             ====================== -->
+        <div class="modules-view is-active" id="modulesViewSpec" data-view="spec">
+
+          <div class="mod-grid">
+            <!-- Software Engineering -->
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Software Engineering</div>
+                <div class="mod-card-sub">Build · ship · maintain</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill a shine has-badge" type="button"
+                  data-code="CS2103T" data-name="Software Engineering" data-grade="A"
+                  data-fun="Fun fact: I was a Teaching Assistant 🧑‍🏫 (yes, I graded labs)">
+                  <span class="pill-badge">TA</span>
+                  <em>CS2103T</em> A
+                </button>
+
+                <button class="mod-pill comp" type="button"
+                  data-code="CP2106" data-name="Independent Software Development Project (Orbital)" data-grade="Completed">
+                  <em>CP2106</em> Completed
+                </button>
+
+                <button class="mod-pill aminus" type="button"
+                  data-code="CS2101" data-name="Effective Communication for Computing Professionals" data-grade="A-">
+                  <em>CS2101</em> A-
+                </button>
+              </div>
+            </div>
+
+            <!-- Database Systems -->
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Database Systems</div>
+                <div class="mod-card-sub">Concepts · implementation · big data</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill aminus" type="button"
+                  data-code="CS2102" data-name="Database Systems" data-grade="A-">
+                  <em>CS2102</em> A-
+                </button>
+
+                <button class="mod-pill aminus" type="button"
+                  data-code="CS3223" data-name="Database Systems Implementation" data-grade="A-">
+                  <em>CS3223</em> A-
+                </button>
+
+                <button class="mod-pill inprog" type="button"
+                  data-code="CS4225" data-name="Big Data Systems for Data Science" data-grade="In Progress"
+                  data-extra="Currently taking (Y3S2) · Database Systems">
+                  <em>CS4225</em> IP
+                </button>
+              </div>
+            </div>
+
+            <!-- Computer Security -->
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Computer Security</div>
+                <div class="mod-card-sub">Threat models · fundamentals</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill aplus shine" type="button"
+                  data-code="CS2107" data-name="Introduction to Information Security" data-grade="A+">
+                  <em>CS2107</em> A+
+                </button>
+
+                <button class="mod-pill aminus" type="button"
+                  data-code="IS1108" data-name="Digital Ethics and Data Privacy" data-grade="A-">
+                  <em>IS1108</em> A-
+                </button>
+              </div>
+            </div>
+
+            <!-- Computer Networks -->
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Computer Networks</div>
+                <div class="mod-card-sub">Theory · practice</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill a shine" type="button"
+                  data-code="CS2105" data-name="Introduction to Computer Networks" data-grade="A">
+                  <em>CS2105</em> A
+                </button>
+
+                <button class="mod-pill aplus shine" type="button"
+                  data-code="CS3103" data-name="Computer Networks Practice" data-grade="A+">
+                  <em>CS3103</em> A+
+                </button>
+              </div>
+            </div>
+
+            <!-- AI/ML -->
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">AI/ML</div>
+                <div class="mod-card-sub">ML · CV · NLP</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill aplus shine" type="button"
+                  data-code="CS2109S" data-name="Introduction to AI and Machine Learning" data-grade="A+">
+                  <em>CS2109S</em> A+
+                </button>
+
+                <button class="mod-pill aminus" type="button"
+                  data-code="CS4243" data-name="Computer Vision and Pattern Recognition" data-grade="A-">
+                  <em>CS4243</em> A-
+                </button>
+
+                <button class="mod-pill inprog" type="button"
+                  data-code="CS4248" data-name="Natural Language Processing" data-grade="In Progress"
+                  data-extra="Currently taking (Y3S2) · AI/ML">
+                  <em>CS4248</em> IP
+                </button>
+              </div>
+            </div>
+
+            <!-- Introduction Mods -->
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Introduction Mods</div>
+                <div class="mod-card-sub">Foundations</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill a shine" type="button"
+                  data-code="CS1010X" data-name="Programming Methodology I" data-grade="A">
+                  <em>CS1010X</em> A
+                </button>
+
+                <button class="mod-pill a shine" type="button"
+                  data-code="CS2030S" data-name="Programming Methodology II" data-grade="A">
+                  <em>CS2030S</em> A
+                </button>
+
+                <button class="mod-pill a shine" type="button"
+                  data-code="CS1231S" data-name="Discrete Structures" data-grade="A">
+                  <em>CS1231S</em> A
+                </button>
+
+                <button class="mod-pill a shine" type="button"
+                  data-code="CS2100" data-name="Computer Organisation" data-grade="A">
+                  <em>CS2100</em> A
+                </button>
+              </div>
+            </div>
+
+            <!-- Algorithm -->
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Algorithm</div>
+                <div class="mod-card-sub">DSA · analysis</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill aminus" type="button"
+                  data-code="CS2040S" data-name="Data Structures and Algorithms" data-grade="A-">
+                  <em>CS2040S</em> A-
+                </button>
+
+                <button class="mod-pill a shine" type="button"
+                  data-code="CS3230" data-name="Design and Analysis of Algorithm" data-grade="A">
+                  <em>CS3230</em> A
+                </button>
+              </div>
+            </div>
+
+            <!-- Others (Non-CS only) -->
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Other Modules</div>
+                <div class="mod-card-sub">Non-CS only</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill aminus" type="button"
+                  data-code="GEA1000" data-name="Quantitative Reasoning with Data" data-grade="A-">
+                  <em>GEA1000</em> A-
+                </button>
+
+                <button class="mod-pill bplus" type="button"
+                  data-code="ES2660" data-name="Communicating in the Information Age" data-grade="B+">
+                  <em>ES2660</em> B+
+                </button>
+
+                <button class="mod-pill aminus" type="button"
+                  data-code="GEC1015" data-name="Public Health in Action" data-grade="A-">
+                  <em>GEC1015</em> A-
+                </button>
+
+                <button class="mod-pill aminus" type="button"
+                  data-code="IS2238" data-name="Economics of IT and AI" data-grade="A-">
+                  <em>IS2238</em> A-
+                </button>
+
+                <button class="mod-pill bplus" type="button"
+                  data-code="IS2218" data-name="Digital Platforms for Businesses" data-grade="B+">
+                  <em>IS2218</em> B+
+                </button>
+
+                <button class="mod-pill aminus" type="button"
+                  data-code="IS1128" data-name="IT, Management and Organisation" data-grade="A-">
+                  <em>IS1128</em> A-
+                </button>
+
+                <button class="mod-pill aplus shine" type="button"
+                  data-code="GEN2006" data-name="Communications for Inter-generational Engagement" data-grade="A+">
+                  <em>GEN2006</em> A+
+                </button>
+
+                <button class="mod-pill comp" type="button"
+                  data-code="CFG1002" data-name="Career Catalyst" data-grade="Completed">
+                  <em>CFG1002</em> Completed
+                </button>
+                <button class="mod-pill comp" type="button"
+                  data-code="CFG1003" data-name="Financial Wellbeing — Introduction" data-grade="Completed">
+                  <em>CFG1003</em> Completed
+                </button>
+                <button class="mod-pill comp" type="button"
+                  data-code="CFG1004" data-name="Financial Wellbeing — Art and Science of Investing" data-grade="Completed">
+                  <em>CFG1004</em> Completed
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================
+             VIEW 2: BY YEAR
+             ====================== -->
+        <div class="modules-view" id="modulesViewYear" data-view="year">
+          <div class="mod-grid two">
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Year 1 · Sem 1</div>
+                <div class="mod-card-sub">Core foundations</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill a shine" type="button" data-code="CS1010X" data-name="Programming Methodology I" data-grade="A"><em>CS1010X</em> A</button>
+                <button class="mod-pill a shine" type="button" data-code="CS1231S" data-name="Discrete Structures" data-grade="A"><em>CS1231S</em> A</button>
+                <button class="mod-pill a shine" type="button" data-code="CS2030S" data-name="Programming Methodology II" data-grade="A"><em>CS2030S</em> A</button>
+                <button class="mod-pill a shine" type="button" data-code="MA1521" data-name="Calculus for Computing" data-grade="A"><em>MA1521</em> A</button>
+                <button class="mod-pill a shine" type="button" data-code="MA1522" data-name="Linear Algebra for Computing" data-grade="A"><em>MA1522</em> A</button>
+                <button class="mod-pill aminus" type="button" data-code="GEA1000" data-name="Quantitative Reasoning with Data" data-grade="A-"><em>GEA1000</em> A-</button>
+              </div>
+            </div>
+
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Year 1 · Sem 2</div>
+                <div class="mod-card-sub">Momentum</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill aminus" type="button" data-code="CS2040S" data-name="Data Structures and Algorithms" data-grade="A-"><em>CS2040S</em> A-</button>
+                <button class="mod-pill a shine" type="button" data-code="CS2100" data-name="Computer Organisation" data-grade="A"><em>CS2100</em> A</button>
+                <button class="mod-pill aminus" type="button" data-code="ST2334" data-name="Probability and Statistics" data-grade="A-"><em>ST2334</em> A-</button>
+                <button class="mod-pill aminus" type="button" data-code="IS1108" data-name="Digital Ethics and Data Privacy" data-grade="A-"><em>IS1108</em> A-</button>
+                <button class="mod-pill bplus" type="button" data-code="ES2660" data-name="Communicating in the Information Age" data-grade="B+"><em>ES2660</em> B+</button>
+                <button class="mod-pill aminus" type="button" data-code="GEC1015" data-name="Public Health in Action" data-grade="A-"><em>GEC1015</em> A-</button>
+              </div>
+            </div>
+
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Year 2 · Sem 1</div>
+                <div class="mod-card-sub">Systems + SE</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill aminus" type="button" data-code="CS2101" data-name="Effective Communication for Computing Professionals" data-grade="A-"><em>CS2101</em> A-</button>
+                <button class="mod-pill aminus" type="button" data-code="CS2102" data-name="Database Systems" data-grade="A-"><em>CS2102</em> A-</button>
+                <button class="mod-pill a shine has-badge" type="button" data-code="CS2103T" data-name="Software Engineering" data-grade="A" data-fun="Fun fact: I was a Teaching Assistant 🧑‍🏫 (yes, I graded labs)"><span class="pill-badge">TA</span><em>CS2103T</em> A</button>
+                <button class="mod-pill a shine" type="button" data-code="CS2106" data-name="Introduction to Operating Systems" data-grade="A"><em>CS2106</em> A</button>
+                <button class="mod-pill a shine" type="button" data-code="CS3230" data-name="Design and Analysis of Algorithm" data-grade="A"><em>CS3230</em> A</button>
+                <button class="mod-pill comp" type="button" data-code="CFG1002" data-name="Career Catalyst" data-grade="Completed"><em>CFG1002</em> Completed</button>
+                <button class="mod-pill comp" type="button" data-code="CFG1003" data-name="Financial Wellbeing — Introduction" data-grade="Completed"><em>CFG1003</em> Completed</button>
+                <button class="mod-pill comp" type="button" data-code="CFG1004" data-name="Financial Wellbeing — Art and Science of Investing" data-grade="Completed"><em>CFG1004</em> Completed</button>
+              </div>
+            </div>
+
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Year 2 · Sem 2</div>
+                <div class="mod-card-sub">AI + Security + Networks</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill aplus shine" type="button" data-code="CS2109S" data-name="Introduction to AI and Machine Learning" data-grade="A+"><em>CS2109S</em> A+</button>
+                <button class="mod-pill aplus shine" type="button" data-code="CS2107" data-name="Introduction to Information Security" data-grade="A+"><em>CS2107</em> A+</button>
+                <button class="mod-pill a shine" type="button" data-code="CS2105" data-name="Introduction to Computer Networks" data-grade="A"><em>CS2105</em> A</button>
+                <button class="mod-pill bplus" type="button" data-code="IS2218" data-name="Digital Platforms for Businesses" data-grade="B+"><em>IS2218</em> B+</button>
+                <button class="mod-pill aminus" type="button" data-code="IS2238" data-name="Economics of IT and AI" data-grade="A-"><em>IS2238</em> A-</button>
+              </div>
+            </div>
+
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Year 3 · Sem 1</div>
+                <div class="mod-card-sub">Advanced electives</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill aminus" type="button" data-code="CS4243" data-name="Computer Vision and Pattern Recognition" data-grade="A-"><em>CS4243</em> A-</button>
+                <button class="mod-pill aplus shine" type="button" data-code="CS3103" data-name="Computer Networks Practice" data-grade="A+"><em>CS3103</em> A+</button>
+                <button class="mod-pill aminus" type="button" data-code="CS3223" data-name="Database Systems Implementation" data-grade="A-"><em>CS3223</em> A-</button>
+                <button class="mod-pill aplus shine" type="button" data-code="GEN2006" data-name="Communications for Inter-generational Engagement" data-grade="A+"><em>GEN2006</em> A+</button>
+                <button class="mod-pill aminus" type="button" data-code="IS1128" data-name="IT, Management and Organisation" data-grade="A-"><em>IS1128</em> A-</button>
+              </div>
+            </div>
+
+            <div class="mod-card">
+              <div class="mod-card-head">
+                <div class="mod-card-title">Year 3 · Sem 2</div>
+                <div class="mod-card-sub">Currently taking</div>
+              </div>
+              <div class="mod-pill-grid">
+                <button class="mod-pill inprog" type="button" data-code="CS4248" data-name="Natural Language Processing" data-grade="In Progress" data-extra="AI/ML · Y3S2"><em>CS4248</em> IP</button>
+                <button class="mod-pill inprog" type="button" data-code="CS4225" data-name="Big Data Systems for Data Science" data-grade="In Progress" data-extra="Database Systems · Y3S2"><em>CS4225</em> IP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popover -->
+      <div class="mod-popover" id="modPopover" aria-hidden="true">
+        <div class="pop-top">
+          <div class="pop-code" id="popCode">CSXXXX</div>
+          <div class="pop-grade" id="popGrade">Grade</div>
+        </div>
+        <div class="pop-name" id="popName">Module Name</div>
+        <div class="pop-extra" id="popExtra"></div>
+        <div class="pop-fun" id="popFun" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    // ===== View toggle (spec/year) =====
+    const tabs = document.querySelectorAll('#modules .modules-tab');
+    const views = document.querySelectorAll('#modules .modules-view');
+    const KEY = 'modulesViewPref';
+
+    function setView(view){
+      tabs.forEach(btn => {
+        const on = btn.dataset.view === view;
+        btn.classList.toggle('is-active', on);
+        btn.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+
+      views.forEach(v => v.classList.toggle('is-active', v.dataset.view === view));
+
+      try { localStorage.setItem(KEY, view); } catch(e) {}
+    }
+
+    // default view
+    let pref = 'spec';
+    try { pref = localStorage.getItem(KEY) || 'spec'; } catch(e) {}
+    setView(pref);
+
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => setView(btn.dataset.view));
+    });
+
+    // ===== Popover (module name) =====
+    const pop = document.querySelector('#modules #modPopover');
+    const popCode = document.querySelector('#modules #popCode');
+    const popName = document.querySelector('#modules #popName');
+    const popGrade = document.querySelector('#modules #popGrade');
+    const popExtra = document.querySelector('#modules #popExtra');
+    const popFun = document.querySelector('#modules #popFun');
+
+    // If any are missing, do nothing (prevents crashes that break tab switching)
+    if (!pop || !popCode || !popName || !popGrade || !popExtra || !popFun) {
+      return;
+    }
+
+    function closePopover(){
+      pop.setAttribute('aria-hidden','true');
+      pop.classList.remove('is-open');
+    }
+
+    function openPopover(pill){
+      popCode.textContent = pill.dataset.code || '';
+      popName.textContent = pill.dataset.name || '';
+      popGrade.textContent = pill.dataset.grade || '';
+      popExtra.textContent = pill.dataset.extra || '';
+
+      if (pill.dataset.fun){
+        popFun.style.display = '';
+        popFun.textContent = pill.dataset.fun;
+      } else {
+        popFun.style.display = 'none';
+        popFun.textContent = '';
+      }
+
+      const rect = pill.getBoundingClientRect();
+      const pageX = rect.left;
+      const pageY = rect.bottom;
+
+      const maxLeft = window.scrollX + window.innerWidth - 320; // width buffer
+      pop.style.left = `${Math.min(pageX, window.innerWidth - 320)}px`;
+      pop.style.top = `${pageY + 12}px`;  
+
+      pop.setAttribute('aria-hidden','false');
+      pop.classList.add('is-open');
+    }
+
+    document.addEventListener('click', (e) => {
+      const pill = e.target.closest('#modules .mod-pill');
+      if (pill) {
+        openPopover(pill);
+        return;
+      }
+
+      // click outside closes
+      if (!e.target.closest('#modules #modPopover')) closePopover();
+    });
+
+    window.addEventListener('scroll', closePopover, { passive:true });
+    window.addEventListener('resize', closePopover);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePopover(); });
+
+  });
+  </script>
+</section>
+
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">06 / Skills</span>
       <h2 class="section-title">Technical <span class="grad-text">Skills</span></h2>
     </div>
     <div class="skills-grid">
@@ -587,13 +1089,10 @@
   </div>
 </section>
 
-<!-- ========================================================
-     AWARDS
-     ======================================================== -->
-<section id="awards" class="section section-alt">
+<section id="awards" class="section">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">06 / Awards</span>
+      <span class="section-tag">07 / Awards</span>
       <h2 class="section-title">Awards &amp; <span class="grad-text">Achievements</span></h2>
     </div>
     <div class="award-tabs">
@@ -842,13 +1341,10 @@
   </div>
 </section>
 
-<!-- ========================================================
-     SPORTS
-     ======================================================== -->
-<section id="sports" class="section">
+<section id="sports" class="section section-alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">07 / Sports</span>
+      <span class="section-tag">08 / Sports</span>
       <h2 class="section-title">Sports <span class="grad-text">Career</span></h2>
       <p class="section-sub">Member of the Singapore National Table Tennis Team since 2016. NUS Table Tennis Captain (AY24/25).</p>
     </div>
@@ -1207,7 +1703,7 @@
     <!-- ---- YouTube Video Highlights ---- -->
     <div class="video-header">
       <h3>Match <span class="grad-text">Highlights</span></h3>
-      <p>Watch me in action at international competitions!</p>
+      <p>Watch Dominic in action at international competitions</p>
     </div>
     <div class="video-grid">
       <div class="video-wrap reveal-up">
@@ -1243,13 +1739,10 @@
   </div>
 </section>
 
-<!-- ========================================================
-     VOLUNTEERING
-     ======================================================== -->
-<section id="volunteering" class="section section-alt">
+<section id="volunteering" class="section">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">08 / Community</span>
+      <span class="section-tag">09 / Community</span>
       <h2 class="section-title">Giving <span class="grad-text">Back</span></h2>
     </div>
     <div class="vol-grid">
@@ -1285,13 +1778,10 @@
   </div>
 </section>
 
-<!-- ========================================================
-     CONTACT
-     ======================================================== -->
-<section id="contact" class="section">
+<section id="contact" class="section section-alt">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">09 / Contact</span>
+      <span class="section-tag">10 / Contact</span>
       <h2 class="section-title">Get In <span class="grad-text">Touch</span></h2>
       <p class="section-sub">Open to internship and full-time opportunities in AI/ML engineering and software development</p>
     </div>
