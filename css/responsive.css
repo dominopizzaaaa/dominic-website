@@ -49,13 +49,14 @@
   .hstat-val  { font-size: 1.3rem; }
 
   /* Hero two-column → single column on mobile */
-  .hero-content { flex-direction: column; gap: 40px; }
+  .hero-content { padding: 96px 16px 56px; }
   .hero-text { text-align: center; }
   .hero-text .hero-stats   { justify-content: center; }
   .hero-text .hero-btns    { justify-content: center; }
   .hero-text .hero-socials { justify-content: center; }
-  .hero-photos { width: 100%; flex-direction: row; }
+  .hero-photos { flex-wrap: wrap; justify-content: center; }
   .hero-photo img { height: 160px; }
+  .hero-photo { flex: 1 1 160px; max-width: 260px; }
 
   .section-header { margin-bottom: 44px; }
 }
